@@ -18,7 +18,7 @@ export default function Header() {
         as="nav"
         borderBottom="1px solid"
         borderColor="gray.500"
-        bg="sky"
+        bg="sky.600"
         px={['1rem', '2rem']}
         py="1rem"
         justify="space-between"

@@ -74,7 +74,10 @@ const textStyles = {
 };
 
 const colors = {
-  sky: '#11224D',
+  sky: {
+    600:'#11224D',
+    800:'#292c35',
+  },
 };
 
 export default extendTheme({

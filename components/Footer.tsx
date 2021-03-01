@@ -1,4 +1,4 @@
-import { Text, Wrap, WrapItem, Link, Box, VStack, Heading } from '@chakra-ui/react';
+import { Text, Flex, Image, Wrap, WrapItem, Link, Box, VStack, Heading } from '@chakra-ui/react';
 
 
 const SectionHead = ({ children }) =>
@@ -12,8 +12,8 @@ export default function Header() {
       <Wrap
         borderTop="1px solid"
         borderColor="gray.500"
-        bg="sky"
-        px="2rem"
+        bg="sky.800"
+        px={["1rem", "1rem", "4rem"]}
         py="1rem"
         justify="space-between"
         wrap="wrap"
@@ -46,14 +46,22 @@ export default function Header() {
           </Wrap>
         </WrapItem>
         <WrapItem>
-          <Box>
-            <SectionHead>Mooni LLC</SectionHead>
-            <Text>Sheridan, WY, USA</Text>
-            <Text>© 2021</Text>
-          </Box>
+          <Flex>
+            <Box>
+              <Image
+                src="images/moon_logo_white.svg"
+                boxSize={50}
+                mx={4}
+                mt={2}
+              />
+            </Box>
+            <Box fontSize="sm">
+              <Text>© 2021 Mooni LLC</Text>
+              <Text>Sheridan, WY, USA</Text>
+              <Text mt={2}>All rights reserved</Text>
+            </Box>
+          </Flex>
         </WrapItem>
-
-
       </Wrap>
     </Box>
   )

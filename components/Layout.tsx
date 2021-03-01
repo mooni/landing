@@ -22,16 +22,13 @@ export default function Layout({ children }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
 
-        <link
-          href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700"
-          rel="stylesheet"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet"/>
-
         <title>{siteTitle}</title>
       </Head>
+
       <Header />
+
       <main>{children}</main>
+
       <Footer />
     </>
   )
