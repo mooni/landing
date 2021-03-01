@@ -12,6 +12,8 @@ export default function Home({ allPostsData }) {
       <main>
         <Hero />
         <Features />
+        <Features reverse/>
+        <Features />
       </main>
     </Layout>
   )

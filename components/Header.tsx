@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 
-import { Flex, Box, HStack, Button, Heading } from '@chakra-ui/react';
+import { InfoOutlineIcon, QuestionIcon, ViewIcon } from '@chakra-ui/icons'
+import { Flex, Image, Box, HStack, Button, Heading } from '@chakra-ui/react';
 
 export const siteTitle = 'Mooni'
 
@@ -11,23 +11,24 @@ export default function Header({ children, home }) {
     <Box
       as="header"
       borderBottom="1px solid white"
+      borderColor="gray.500"
+      bg="sky"
     >
       <Flex
-        px="1rem"
-        py="0.5rem"
+        px="2rem"
+        py="1rem"
         justify="space-between"
       >
-        <Heading
-          layerStyle="appName"
-        >
-          MOONI
-        </Heading>
+        <Image
+          height={8}
+          src="images/mooni_name.svg"
+        />
 
         <HStack spacing={4}>
-          <Button variant="link" colorScheme="purple">About</Button>
-          <Button variant="link" colorScheme="purple">FAQ</Button>
-          <Button variant="link" colorScheme="purple">Developers</Button>
-          <Button variant="solid" colorScheme="purple">Use Mooni</Button>
+          <Button variant="link" leftIcon={<InfoOutlineIcon/>} colorScheme="purple">About</Button>
+          <Button variant="link" leftIcon={<QuestionIcon/>} colorScheme="purple">FAQ</Button>
+          <Button variant="link" leftIcon={<ViewIcon/>} colorScheme="purple">Developers</Button>
+          <Button variant="fluo">Use Mooni</Button>
         </HStack>
       </Flex>
     </Box>
