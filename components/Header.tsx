@@ -6,7 +6,7 @@ import { Flex, Image, Box, HStack, Button, Heading } from '@chakra-ui/react';
 
 export const siteTitle = 'Mooni'
 
-export default function Header({ children, home }) {
+export default function Header() {
   return (
     <Box
       as="header"

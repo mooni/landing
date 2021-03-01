@@ -5,7 +5,7 @@ import { Box, Flex, Image, Text, Heading, VStack, Button, HStack } from '@chakra
 
 export const siteTitle = 'Mooni'
 
-export default function Hero({ children, home }) {
+export default function Hero() {
   return (
     <Box as="section" h="80vh" py={16}>
       <VStack spacing={8}>
