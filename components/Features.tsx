@@ -39,7 +39,7 @@ function Feature({ image, title, content, reverse }) {
 
 export default function Features() {
   return (
-    <Box as="section">
+    <Box as="section" py={8}>
       <VStack spacing={8}>
         <Feature
           title="Fast cash out"

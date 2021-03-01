@@ -7,8 +7,8 @@ export const siteTitle = 'Mooni'
 
 export default function Hero() {
   return (
-    <Box as="section" minHeight="80vh" py={16} px={4}>
-      <VStack spacing={8}>
+    <Box as="section">
+      <VStack spacing={8} py={16} px={4}>
         <Image
           src="images/moonrender6.png"
           boxSize={300}
@@ -50,6 +50,10 @@ export default function Hero() {
           </Button>
         </Stack>
       </VStack>
+      <Image
+        src="images/cityrender2.png"
+        width="100%"
+      />
     </Box>
   );
 }
