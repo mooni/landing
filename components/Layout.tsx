@@ -2,12 +2,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
+
 const name = '[Your Name]'
 export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
   return (
-    <div>
+    <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -28,6 +29,6 @@ export default function Layout({ children, home }) {
         <h1>{siteTitle}</h1>
       </header>
       <main>{children}</main>
-    </div>
+    </>
   )
 }
