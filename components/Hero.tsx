@@ -1,15 +1,19 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { Box, Flex, Image, Text, Heading, VStack, Button, HStack } from '@chakra-ui/react'
+import { Wrap, WrapItem, Box, Flex, Image, Text, Heading, VStack, Button, HStack, Stack } from '@chakra-ui/react'
 
 export const siteTitle = 'Mooni'
 
 export default function Hero() {
   return (
-    <Box as="section" h="80vh" py={16}>
+    <Box as="section" minHeight="80vh" py={16} px={4}>
       <VStack spacing={8}>
-        <Image src="images/moonrender6.png" boxSize={400}/>
+        <Image
+          src="images/moonrender6.png"
+          boxSize={400}
+          objectFit="contain"
+        />
         <Heading
           as="h2"
           textStyle="h2"
@@ -28,7 +32,13 @@ export default function Hero() {
         >
           Convert between cryptocurrencies in your blockchain wallet to fiat in your bank account, within minutes, without registration.
         </Heading>
-        <HStack spacing={4}>
+        <Stack
+          direction={["column", "row"]}
+          spacing={4}
+          justify="center"
+          width="90%"
+          maxWidth="25rem"
+        >
           <Button variant="fluo">Use Mooni</Button>
           <Button variant="white">
             <Text
@@ -38,7 +48,7 @@ export default function Hero() {
               Integrate it
             </Text>
           </Button>
-        </HStack>
+        </Stack>
       </VStack>
     </Box>
   );
