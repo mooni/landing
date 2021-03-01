@@ -2,9 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-
-const name = '[Your Name]'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Mooni'
 
 export default function Layout({ children, home }) {
   return (
@@ -13,7 +11,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="The easiest way to cashout cryptocurrencies"
         />
         <meta
           property="og:image"
@@ -23,11 +21,13 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+
+        <link
+          href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700"
+          rel="stylesheet"/>
+
         <title>{siteTitle}</title>
       </Head>
-      <header>
-        <h1>{siteTitle}</h1>
-      </header>
       <main>{children}</main>
     </>
   )

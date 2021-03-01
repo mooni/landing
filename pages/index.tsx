@@ -1,13 +1,18 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/Layout'
 import Link from 'next/link'
+import Header from '../components/Header'
+import Hero from '../components/Hero'
+import Features from '../components/Features'
 
 export default function Home({ allPostsData }) {
   return (
     <Layout>
-      <section>
-        <h2>Blog</h2>
-      </section>
+      <Header />
+      <main>
+        <Hero />
+        <Features />
+      </main>
     </Layout>
   )
 }

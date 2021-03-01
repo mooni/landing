@@ -1,5 +1,21 @@
 import { extendTheme } from "@chakra-ui/react"
 
-const colors = {}
+const config = {
+  initialColorMode: "dark",
+  useSystemColorMode: false,
+}
 
-export default extendTheme({ colors })
+const layerStyles = {
+  appName: {
+    fontFamily: '"Montserrat", sans-serif',
+    fontWeight: 400,
+  }
+};
+
+const colors = {};
+
+export default extendTheme({
+  config,
+  layerStyles,
+  colors,
+})
