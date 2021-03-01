@@ -1,11 +1,6 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import { Box, VStack, Stack, Heading, Image, Text } from '@chakra-ui/react'
 
-import { Box, Flex, VStack, Stack, Center, Heading, Image, HStack, Button, Text, Wrap, WrapItem } from '@chakra-ui/react'
-
-export const siteTitle = 'Mooni'
-
-function Feature({ image, title, content, reverse }) {
+function Feature({ image, title, content, reverse= false }) {
   return (
     <Stack
       px={8}
@@ -39,7 +34,7 @@ function Feature({ image, title, content, reverse }) {
 
 export default function Features() {
   return (
-    <Box as="section" py={8}>
+    <Box as="section" py={8} id="features">
       <VStack spacing={8}>
         <Feature
           title="Fast cash out"

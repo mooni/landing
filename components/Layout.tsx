@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
 import Header from './Header'
+import Footer from './Footer'
 
 export const siteTitle = 'Mooni'
 
@@ -33,6 +32,7 @@ export default function Layout({ children }) {
       </Head>
       <Header />
       <main>{children}</main>
+      <Footer />
     </>
   )
 }

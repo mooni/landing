@@ -1,9 +1,4 @@
-import Head from 'next/head'
-import Link from 'next/link'
-
-import { Wrap, WrapItem, Box, Flex, Image, Text, Heading, VStack, Button, HStack, Stack } from '@chakra-ui/react'
-
-export const siteTitle = 'Mooni'
+import { Box, Image, Text, Heading, VStack, Button, Stack } from '@chakra-ui/react'
 
 export default function Hero() {
   return (
@@ -18,7 +13,7 @@ export default function Hero() {
           as="h2"
           textStyle="h2"
           size="xl"
-          align="center"
+          textAlign="center"
           bgGradient="linear-gradient(110.78deg, rgba(255, 238, 238, 0.68) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.68) 49.98%, rgba(151, 115, 255, 0.76) 68.97%);"
           bgClip="text"
         >
@@ -28,7 +23,7 @@ export default function Hero() {
           textStyle="h4"
           as="h4"
           size="md"
-          align="center"
+          textAlign="center"
         >
           Convert between cryptocurrencies in your blockchain wallet to fiat in your bank account, within minutes, without registration.
         </Heading>

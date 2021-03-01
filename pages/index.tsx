@@ -1,10 +1,8 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/Layout'
-import Link from 'next/link'
+import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import Features from '../components/Features'
 
-export default function Home({ allPostsData }) {
+export default function Home() {
   return (
     <Layout>
       <Hero />

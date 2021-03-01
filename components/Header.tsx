@@ -1,8 +1,6 @@
-import Head from 'next/head'
-import Link from 'next/link'
-
-import { InfoOutlineIcon, QuestionIcon, ViewIcon } from '@chakra-ui/icons'
+import { InfoOutlineIcon, QuestionIcon, ViewIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import { Flex, Image, Box, HStack, Button, Heading } from '@chakra-ui/react';
+import { openApp, openDoc } from '../lib/links';
 
 export const siteTitle = 'Mooni'
 
@@ -18,16 +16,16 @@ export default function Header() {
         left={0}
         right={0}
         as="nav"
-        borderBottom="1px solid white"
+        borderBottom="1px solid"
         borderColor="gray.500"
         bg="sky"
-        px="2rem"
+        px={['1rem', '2rem']}
         py="1rem"
         justify="space-between"
         align="center"
       >
         <Image
-          height={8}
+          height={6}
           src="images/mooni_name.svg"
         />
 
@@ -37,9 +35,19 @@ export default function Header() {
         >
           <Button variant="link" leftIcon={<InfoOutlineIcon/>} colorScheme="purple">About</Button>
           <Button variant="link" leftIcon={<QuestionIcon/>} colorScheme="purple">FAQ</Button>
-          <Button variant="link" leftIcon={<ViewIcon/>} colorScheme="purple">Developers</Button>
-          <Button variant="fluo">Use Mooni</Button>
+          <Button variant="link" leftIcon={<ViewIcon/>} colorScheme="purple" onClick={openDoc}>Developers</Button>
+          <Button variant="fluo" onClick={openApp}>Use Mooni</Button>
         </HStack>
+
+        <Button
+          variant="fluo"
+          display={{ base: "block", md: "none" }}
+          leftIcon={<ExternalLinkIcon/>}
+          onClick={openApp}
+        >
+          App
+        </Button>
+
       </Flex>
     </Box>
   )
