@@ -8,8 +8,15 @@ export const siteTitle = 'Mooni'
 
 export default function Header() {
   return (
-    <header>
+    <Box
+      as="header"
+      h="75px"
+    >
       <Flex
+        position="fixed"
+        top={0}
+        left={0}
+        right={0}
         as="nav"
         borderBottom="1px solid white"
         borderColor="gray.500"
@@ -34,6 +41,6 @@ export default function Header() {
           <Button variant="fluo">Use Mooni</Button>
         </HStack>
       </Flex>
-    </header>
+    </Box>
   )
 }

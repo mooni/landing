@@ -11,7 +11,7 @@ export default function Hero() {
       <VStack spacing={8}>
         <Image
           src="images/moonrender6.png"
-          boxSize={400}
+          boxSize={300}
           objectFit="contain"
         />
         <Heading
