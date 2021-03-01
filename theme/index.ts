@@ -1,15 +1,18 @@
-import { extendTheme } from "@chakra-ui/react"
+import { extendTheme, ColorMode } from "@chakra-ui/react"
 
 const config = {
-  initialColorMode: "dark",
+  initialColorMode: "dark" as ColorMode,
   useSystemColorMode: false,
 };
 
 const styles = {
   global: {
-    "html, body": {
-      bg: 'radial-gradient(82.17% 210.37% at 0.59% 2.48%, #292c35 0%, #11224D 97.19%)',
+    "html": {
+      bg: '#11224D',
       fontFamily: '"Lato", sans-serif',
+    },
+    "body": {
+      bg: 'radial-gradient(82.17% 210.37% at 0.59% 2.48%, #292c35 0%, #11224D 97.19%)',
     },
   },
 };

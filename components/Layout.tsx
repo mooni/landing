@@ -1,12 +1,15 @@
+import { Flex, Box, Image, Text, Heading, VStack, Button, Stack } from '@chakra-ui/react'
+
 import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
+import Background from './Background'
 
 export const siteTitle = 'Mooni'
 
 export default function Layout({ children }) {
   return (
-    <>
+    <Box position="relative">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -25,11 +28,15 @@ export default function Layout({ children }) {
         <title>{siteTitle}</title>
       </Head>
 
-      <Header />
+      <Background />
 
-      <main>{children}</main>
+      <Box zIndex={2} position="relative">
+        <Header />
 
-      <Footer />
-    </>
+        <main>{children}</main>
+
+        <Footer />
+      </Box>
+    </Box>
   )
 }

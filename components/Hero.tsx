@@ -1,14 +1,28 @@
-import { Box, Image, Text, Heading, VStack, Button, Stack } from '@chakra-ui/react'
+import { Flex, Box, Image, Text, Heading, VStack, Button, Stack } from '@chakra-ui/react'
+// import { useScroll } from '../lib/utils'
 
 export default function Hero() {
+  // const scroll = useScroll();
+  // const a = Math.max(Math.min(50 + scroll, 400), 50);
+  // const b = (a-50)/(400-50);
+  // const leftAstro = b * 100 * 0.4 + 10;
+
   return (
     <Box as="section">
       <VStack spacing={8} py={16} px={4}>
-        <Image
-          src="images/moonrender6.png"
-          boxSize={300}
-          objectFit="contain"
-        />
+        <Flex
+          align="center"
+          position="absolute"
+          top={100}
+          sx={{ "mix-blend-mode": "hard-light"}}
+          opacity={0.3}
+          display="none"
+        >
+          <Image
+            src="images/moonrender6_large.png"
+            boxSize={500}
+          />
+        </Flex>
         <Heading
           as="h2"
           size="xxl"
@@ -17,7 +31,7 @@ export default function Hero() {
           bgClip="text"
           fontFamily="'Lato', sans-serif"
           fontWeight={700}
-          fontSize="4rem"
+          fontSize={{base: "2rem", sm: "3rem", md: "4rem"}}
         >
           The easiest way to cashout cryptocurrencies
         </Heading>
@@ -48,10 +62,24 @@ export default function Hero() {
           </Button>
         </Stack>
       </VStack>
-      <Image
-        src="images/cityrender2.png"
-        width="100%"
-      />
+      <Box display="flex" justifyContent="center">
+        <Box position="relative">
+          <Image
+            src="images/cityrender2.png"
+            width="100%"
+            maxWidth="1200px"
+          />
+{/*
+          <Image
+            src="images/atroatm.png"
+            width="20%"
+            position="absolute"
+            top={150}
+            left={`${leftAstro}%`}
+          />
+*/}
+        </Box>
+      </Box>
     </Box>
   );
 }
