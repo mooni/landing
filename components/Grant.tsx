@@ -3,7 +3,7 @@ import { Box, Flex, Button, Stack, Image, Text } from '../components/ui';
 
 export default function Grant() {
   return (
-    <Box as="section" py={16} id="grant">
+    <Box as="section" id="grant">
       <Stack
         px={8}
         py={4}
@@ -18,12 +18,16 @@ export default function Grant() {
           objectFit="contain"
         />
         <Flex maxWidth="32rem" align="center" direction="column">
-          <Text align="center">
+          <Text
+            textStyle="paragraph"
+            align="center"
+          >
             We're hosting a grant on Gitcoin, where anyone can participate to the funding of this project. During CLR rounds, donations are quadraticly matched !
           </Text>
           <Button
             variant="white"
             onClick={openGrant}
+            mt={8}
           >
             Donate
           </Button>

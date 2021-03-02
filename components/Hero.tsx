@@ -10,19 +10,19 @@ export default function Hero() {
   return (
     <Box as="section">
       <VStack spacing={8} py={16} px={4}>
-        {/*<Flex
-          align="center"
+        <Box
+          bg={`url(images/moonrender6_large.png) 50% 0% / contain no-repeat`}
+          bgRepeat="no-repeat"
+          width="450px"
+          height="450px"
+          maxWidth="80%"
+          maxHeight="80%"
           position="absolute"
-          top={100}
-          sx={{ "mix-blend-mode": "hard-light"}}
-          opacity={0.3}
-          display="none"
-        >
-          <Image
-            src="images/moonrender6_large.png"
-            boxSize={500}
-          />
-        </Flex>*/}
+          top="120px"
+          opacity={0.1}
+          zIndex={-1}
+          // sx={{ "mix-blend-mode": "overlay"}}
+        />
         <Heading
           as="h2"
           size="xxl"

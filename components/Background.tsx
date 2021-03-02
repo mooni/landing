@@ -1,11 +1,6 @@
-import { useMemo } from 'react';
-import { useScroll } from '../lib/utils';
-
 import { Center, Box } from '../components/ui'
 
 export default function Background() {
-  const scroll = useScroll();
-  const moonImage = useMemo(() => scroll > 600 ? 'moonrender6_large' : 'moonrender6', [scroll])
 
   return (
     <Center
@@ -28,19 +23,6 @@ export default function Background() {
         width="100%"
         height="100%"
       />
-      <Box
-        bg={`url(images/${moonImage}.png) 50% 0% / contain no-repeat`}
-        bgRepeat="no-repeat"
-        width="450px"
-        height="450px"
-        maxWidth="80%"
-        maxHeight="80%"
-        position="absolute"
-        top="120px"
-        opacity={0.3}
-        // sx={{ "mix-blend-mode": "overlay"}}
-      />
-
 
     </Center>
   );

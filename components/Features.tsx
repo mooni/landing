@@ -24,7 +24,10 @@ function Feature({ image, title, content, reverse= false }) {
           >
             {title}
           </Heading>
-          <Text align="center">
+          <Text
+            textStyle="paragraph"
+            align="center"
+          >
             {content}
           </Text>
         </Box>

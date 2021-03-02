@@ -41,12 +41,7 @@ const components = {
   }
 };
 
-const layerStyles = {
-  appName: {
-    fontFamily: '"Montserrat", sans-serif',
-    fontWeight: 400,
-  },
-};
+const layerStyles = {};
 
 const textStyles = {
   h2: {
@@ -57,7 +52,8 @@ const textStyles = {
   },
   h3: {
     fontFamily: '"Montserrat", sans-serif',
-    fontWeight: "bold",
+    fontWeight: 600,
+    fontSize: "4rem",
     lineHeight: "110%",
     letterSpacing: "-1%",
   },
@@ -67,6 +63,11 @@ const textStyles = {
     lineHeight: "110%",
     letterSpacing: "-1%",
   },
+  paragraph: {
+    fontFamily: '"Lato", sans-serif',
+    fontWeight: 400,
+    fontSize: "1rem",
+  }
 };
 
 const colors = {
