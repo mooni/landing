@@ -1,7 +1,6 @@
 import { Text, Flex, HStack, Image, Wrap, WrapItem, Link, Box, VStack, Heading } from '../components/ui';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 import { faDiscord, faGithub, faTwitter, faReddit } from '@fortawesome/free-brands-svg-icons'
 
@@ -42,10 +41,10 @@ export default function Header() {
             </Flex>
             <Text textStyle="h3"  mb={2} fontSize="0.9rem">The easiest crypto off ramp</Text>
             <HStack spacing={3} fontSize="1.5rem">
-              <Link onClick={openGithub}><FontAwesomeIcon icon={faGithub}  size="1x"/></Link>
+              <Link onClick={openGithub}><FontAwesomeIcon icon={faGithub} size="1x" /></Link>
               <Link onClick={openDiscord} pt={0.5}><FontAwesomeIcon icon={faDiscord} size="1x" /></Link>
-              <Link onClick={openTwitter}><FontAwesomeIcon icon={faTwitter}  size="1x"/></Link>
-              <Link onClick={openReddit}><FontAwesomeIcon icon={faReddit}  size="1x"/></Link>
+              <Link onClick={openTwitter}><FontAwesomeIcon icon={faTwitter} size="1x" /></Link>
+              <Link onClick={openReddit}><FontAwesomeIcon icon={faReddit} size="1x" /></Link>
             </HStack>
           </VStack>
         </WrapItem>

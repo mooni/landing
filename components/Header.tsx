@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 
-import { InfoOutlineIcon, QuestionIcon, ViewIcon, ExternalLinkIcon } from '@chakra-ui/icons'
-import { Flex, Link, Image, Box, HStack, Button, Heading } from '../components/ui';
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Flex, Link, Image, Box, HStack, Button } from '../components/ui';
 import { openApp, openDoc } from '../lib/links';
 import { useScroll } from '../lib/utils'
 
@@ -37,8 +37,8 @@ export default function Header() {
           spacing={6}
           display={{ base: "none", md: "flex" }}
         >
-          <Link href="#faq">About</Link>
-          <Link href="#features">FAQ</Link>
+          <Link href="#features">About</Link>
+          <Link href="#faq">FAQ</Link>
           <Link onClick={openDoc}>Developers</Link>
           <Button variant="fluo" onClick={openApp}>Use Mooni</Button>
         </HStack>
