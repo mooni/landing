@@ -1,8 +1,8 @@
 import { useMemo } from 'react'
 
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Flex, Link, Image, Box, HStack, Button, Wrap } from '../components/ui'
-import { openApp, openDoc } from '../lib/links';
+import { Flex, Link, Image, Box, HStack } from '../components/ui'
+import { AutoLink, AutoButtonLink } from './Links'
 import { useScroll } from '../lib/utils'
 
 export default function Header() {
@@ -40,18 +40,23 @@ export default function Header() {
         >
           <Link href="#features">About</Link>
           <Link href="#faq">FAQ</Link>
-          <Link onClick={openDoc}>Developers</Link>
-          <Button variant="fluo" onClick={openApp}>Use Mooni</Button>
+          <AutoLink to="doc">Developers</AutoLink>
+          <AutoButtonLink
+            variant="fluo"
+            to="app"
+          >
+            Use Mooni
+          </AutoButtonLink>
         </HStack>
 
-        <Button
+        <AutoButtonLink
           variant="fluo"
           display={{ base: "flex", md: "none" }}
           leftIcon={<ExternalLinkIcon/>}
-          onClick={openApp}
+          to="app"
         >
           App
-        </Button>
+        </AutoButtonLink>
 
       </Flex>
     </Box>

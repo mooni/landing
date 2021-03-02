@@ -1,16 +1,15 @@
 import { Text, Flex, HStack, Image, Wrap, WrapItem, Link, Box, VStack, Heading } from '../components/ui';
+import { AutoLink } from './Links'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { faDiscord, faGithub, faTwitter, faReddit } from '@fortawesome/free-brands-svg-icons'
 
-import { openTwitter, openDiscord, openGithub, openDoc, openWidgetSDK, openGrant, openReddit } from '../lib/links';
-
 const SectionHead = ({ children }) =>
   <Heading textStyle="h3" fontSize="1.2rem" fontWeight="bold">{children}</Heading>
 
-const SectionLink = ({ children, onClick }) =>
-  <Link textStyle="normal" onClick={onClick}>{children}</Link>
+const SectionLink = ({ children, to, ...props }) =>
+  <AutoLink textStyle="normal" to={to} {...props}>{children}</AutoLink>
 
 export default function Header() {
   return (
@@ -39,10 +38,10 @@ export default function Header() {
             </Flex>
             <Text textStyle="h3"  mb={2} fontSize="0.9rem">The easiest crypto off ramp</Text>
             <HStack spacing={3} fontSize="1.5rem">
-              <Link onClick={openGithub}><FontAwesomeIcon icon={faGithub} size="1x" /></Link>
-              <Link onClick={openDiscord} pt={0.5}><FontAwesomeIcon icon={faDiscord} size="1x" /></Link>
-              <Link onClick={openTwitter}><FontAwesomeIcon icon={faTwitter} size="1x" /></Link>
-              <Link onClick={openReddit}><FontAwesomeIcon icon={faReddit} size="1x" /></Link>
+              <AutoLink to="github"><FontAwesomeIcon icon={faGithub} size="1x" /></AutoLink>
+              <AutoLink to="discord" pt={0.5}><FontAwesomeIcon icon={faDiscord} size="1x" /></AutoLink>
+              <AutoLink to="twitter"><FontAwesomeIcon icon={faTwitter} size="1x" /></AutoLink>
+              <AutoLink to="reddit"><FontAwesomeIcon icon={faReddit} size="1x" /></AutoLink>
             </HStack>
           </VStack>
         </WrapItem>
@@ -52,18 +51,18 @@ export default function Header() {
             <WrapItem>
               <VStack spacing={2} align="start">
                 <SectionHead>Community</SectionHead>
-                <SectionLink onClick={openTwitter}>Twitter</SectionLink>
-                <SectionLink onClick={openDiscord}>Discord</SectionLink>
-                <SectionLink onClick={openReddit}>Reddit</SectionLink>
-                <SectionLink onClick={openGrant}>Gitcoin grant</SectionLink>
+                <SectionLink to="twitter">Twitter</SectionLink>
+                <SectionLink to="discord">Discord</SectionLink>
+                <SectionLink to="reddit">Reddit</SectionLink>
+                <SectionLink to="grant">Gitcoin grant</SectionLink>
               </VStack>
             </WrapItem>
             <WrapItem>
               <VStack spacing={2} align="start">
                 <SectionHead>Developers</SectionHead>
-                <SectionLink onClick={openGithub}>Github</SectionLink>
-                <SectionLink onClick={openDoc}>Documentation</SectionLink>
-                <SectionLink onClick={openWidgetSDK}>Widget SDK</SectionLink>
+                <SectionLink to="github">Github</SectionLink>
+                <SectionLink to="doc">Documentation</SectionLink>
+                <SectionLink to="widgetSDK">Widget SDK</SectionLink>
               </VStack>
             </WrapItem>
           </Wrap>

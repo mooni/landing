@@ -1,7 +1,6 @@
-import { Flex, Box, Image, Button, Heading, VStack, Stack, Center } from '../components/ui'
-import { openWidgetSDK, openApp } from '../lib/links'
-import { Text } from '@chakra-ui/react'
+import { Box, Heading, VStack, Stack, Center } from '../components/ui'
 import React from 'react'
+import { AutoButtonLink } from './Links'
 
 export default function Hero() {
   // const scroll = useScroll();
@@ -51,18 +50,18 @@ export default function Hero() {
           width="90%"
           maxWidth="25rem"
         >
-          <Button
+          <AutoButtonLink
             variant="fluo"
-            onClick={openApp}
+            to="app"
           >
             Use Mooni
-          </Button>
-          <Button
+          </AutoButtonLink>
+          <AutoButtonLink
             variant="white"
-            onClick={openWidgetSDK}
+            to="widgetSDK"
           >
             Integrate it
-          </Button>
+          </AutoButtonLink>
         </Stack>
       </VStack>
       <Center>

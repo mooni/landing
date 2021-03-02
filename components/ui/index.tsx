@@ -3,7 +3,7 @@ import { Button as ChakraButton, Text } from '@chakra-ui/react'
 
 export * from '@chakra-ui/react'
 
-export const Button = ({ variant, children, ...props }) => (
+export const Button = ({ variant = undefined, children, ...props }) => (
   <ChakraButton
     variant={variant}
     {...props}

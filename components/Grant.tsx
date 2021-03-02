@@ -1,5 +1,5 @@
-import { openGrant } from '../lib/links'
-import { Box, Flex, Button, Stack, Image, Text } from '../components/ui';
+import { Box, Flex, Stack, Image, Text } from '../components/ui';
+import { AutoButtonLink } from './Links'
 
 export default function Grant() {
   return (
@@ -24,13 +24,13 @@ export default function Grant() {
           >
             We're hosting a grant on Gitcoin, where anyone can participate to the funding of this project. During CLR rounds, donations are quadraticly matched !
           </Text>
-          <Button
+          <AutoButtonLink
             variant="white"
-            onClick={openGrant}
             mt={8}
+            to="grant"
           >
             Donate
-          </Button>
+          </AutoButtonLink>
         </Flex>
       </Stack>
     </Box>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import { Link, VStack, Image, Flex, Text, Box } from '../components/ui'
-import { openDiscord } from '../lib/links'
+import { VStack, Image, Flex, Text, Box } from '../components/ui'
+import { AutoLink } from './Links'
 
 const Question = ({ children, open, ...props }) => (
   <Box
@@ -125,7 +125,7 @@ export default function FAQ() {
         textAlign="center"
         mt={4}
       >
-        You can always reach us on <Link onClick={openDiscord}>Discord</Link> if you have any other questions 😇
+        You can always reach us on <AutoLink to="discord">Discord</AutoLink> if you have any other questions 😇
       </Text>
     </Flex>
   );
