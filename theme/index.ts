@@ -1,4 +1,5 @@
 import { extendTheme, ColorMode } from "@chakra-ui/react"
+import { Heading } from '../components/ui'
 
 const config = {
   initialColorMode: "dark" as ColorMode,
@@ -49,6 +50,10 @@ const layerStyles = {
   gradient: {
     bg: 'linear-gradient(110.78deg, rgba(255, 238, 238, 0.68) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.68) 49.98%, rgba(151, 115, 255, 0.76) 68.97%)',
   },
+  textGradient: {
+    bgGradient: "linear-gradient(110.78deg, rgba(255, 238, 238, 0.88) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.88) 49.98%, rgba(151, 115, 255, 0.96) 68.97%);",
+    bgClip: "text",
+  },
   gradientTransparent: {
     bg: 'linear-gradient(110.78deg, rgba(255, 238, 238, 0.34) -3.19%, rgba(255, 115, 117, 0.41) 1.75%, rgba(227, 115, 255, 0.34) 49.98%, rgba(151, 115, 255, 0.38) 68.97%)',
   }
@@ -63,7 +68,7 @@ const textStyles = {
   h2: {
     fontFamily: '"Montserrat", sans-serif',
     fontWeight: 600,
-    fontSize: ['1.3rem', '2rem', '3rem'],
+    fontSize: ['1.3rem', '2rem', '2.5rem'],
   },
   h3: {
     fontFamily: '"Montserrat", sans-serif',
@@ -74,10 +79,15 @@ const textStyles = {
     fontWeight: 300,
     fontSize: ['1rem', '1rem', '1.5rem'],
   },
-  paragraph: {
+  normal: {
     fontFamily: '"Lato", sans-serif',
     fontWeight: 400,
     fontSize: "1rem",
+  },
+  small: {
+    fontFamily: '"Lato", sans-serif',
+    fontWeight: 300,
+    fontSize: ['0.9rem'],
   },
   caption: {
     fontFamily: "'Montserrat', sans-serif",

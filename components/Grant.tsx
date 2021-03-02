@@ -19,7 +19,7 @@ export default function Grant() {
         />
         <Flex maxWidth="32rem" align="center" direction="column">
           <Text
-            textStyle="paragraph"
+            textStyle="normal"
             align="center"
           >
             We're hosting a grant on Gitcoin, where anyone can participate to the funding of this project. During CLR rounds, donations are quadraticly matched !

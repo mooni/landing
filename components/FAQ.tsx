@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
-import { Center, VStack, Image, Heading, Flex, Text, Box, Stack } from '../components/ui'
+import { Link, VStack, Image, Flex, Text, Box } from '../components/ui'
+import { openDiscord } from '../lib/links'
 
 const Question = ({ children, open, ...props }) => (
   <Box
@@ -44,12 +45,12 @@ const Response = ({ children, ...props }) => (
   <Box
     bg="sky.800"
     px="2rem"
-    py="2rem"
+    py="1.5rem"
     borderRadius="12px"
     maxWidth="100%"
     {...props}
   >
-    <Text textStyle="paragraph">
+    <Text textStyle="normal">
       {children}
     </Text>
   </Box>
@@ -77,7 +78,7 @@ const list = [
   {
     key: 'wallet',
     question: 'What kind of wallet can I use ?',
-    response: 'Most common web3-compatible wallet can be used. As now, you can use Metamask, Portis, Fortmatic, WalletConnect, Coinbase Wallet, Trust Wallet...',
+    response: 'Most Ethereum wallets can be used, like Metamask or any wallet that supports WalletConnect.',
   },
   {
     key: 'currency',
@@ -104,7 +105,7 @@ export default function FAQ() {
         textAlign="center"
         mb={4}
       >
-        Want to know more ? We may have an answer !
+        Are you looking for answers ?
       </Text>
 
       <VStack spacing={4} mt={4} maxWidth="xl" width="95%">
@@ -118,6 +119,14 @@ export default function FAQ() {
           />
         ))}
       </VStack>
+
+      <Text
+        textStyle="small"
+        textAlign="center"
+        mt={4}
+      >
+        You can always reach us on <Link onClick={openDiscord}>Discord</Link> if you have any other questions 😇
+      </Text>
     </Flex>
   );
 }

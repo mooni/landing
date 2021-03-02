@@ -22,7 +22,7 @@ function Feature({ image, title, content, reverse= false }) {
             {title}
           </Heading>
           <Text
-            textStyle="paragraph"
+            textStyle="normal"
             align="center"
           >
             {content}
@@ -42,7 +42,7 @@ export default function Features() {
       />
       <VStack spacing={8}>
         <Feature
-          title="Fast cash out"
+          title="The missing off-ramp"
           image={
             <Image
               src="images/distrib2.png"

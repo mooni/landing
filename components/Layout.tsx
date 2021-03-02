@@ -14,7 +14,7 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="The easiest way to cashout cryptocurrencies"
+          content="The easiest way to cash out cryptocurrencies"
         />
         <meta
           property="og:image"

@@ -1,5 +1,7 @@
 import { Flex, Box, Image, Button, Heading, VStack, Stack, Center } from '../components/ui'
 import { openWidgetSDK, openApp } from '../lib/links'
+import { Text } from '@chakra-ui/react'
+import React from 'react'
 
 export default function Hero() {
   // const scroll = useScroll();
@@ -27,12 +29,11 @@ export default function Hero() {
           as="h1"
           textStyle="h1"
           textAlign="center"
-          bgGradient="linear-gradient(110.78deg, rgba(255, 238, 238, 0.68) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.68) 49.98%, rgba(151, 115, 255, 0.76) 68.97%);"
-          bgClip="text"
+          layerStyle={"textGradient"}
           fontSize={{base: "2rem", sm: "3rem", md: "4rem"}}
           maxWidth="50rem"
         >
-          The easiest way to cashout cryptocurrencies
+          Easy crypto cash out
         </Heading>
         <Heading
           as="h4"
@@ -41,7 +42,7 @@ export default function Hero() {
           fontSize={{base: "0.9rem", sm: "1rem", md: "1.2rem"}}
           maxWidth="50rem"
         >
-          Convert between cryptocurrencies in your blockchain wallet to fiat in your bank account, within minutes, without registration.
+          Convert between cryptocurrencies in your blockchain wallet to fiat in your bank account, within minutes.
         </Heading>
         <Stack
           direction={["column", "row"]}

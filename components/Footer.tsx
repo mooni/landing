@@ -10,7 +10,7 @@ const SectionHead = ({ children }) =>
   <Heading textStyle="h3" fontSize="1.2rem" fontWeight="bold">{children}</Heading>
 
 const SectionLink = ({ children, onClick }) =>
-  <Link textStyle="paragraph" onClick={onClick}>{children}</Link>
+  <Link textStyle="normal" onClick={onClick}>{children}</Link>
 
 export default function Header() {
   return (
@@ -72,7 +72,7 @@ export default function Header() {
       <Box my={4}>
         <Text
           align="center"
-          textStyle="paragraph"
+          textStyle="normal"
           fontSize="sm"
         >
           © 2021 Mooni LLC. All rights reserved
