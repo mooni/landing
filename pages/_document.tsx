@@ -7,6 +7,8 @@ export default class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
+          <meta charSet="utf-8"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
           <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png"/>
           <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png"/>
@@ -16,7 +18,6 @@ export default class Document extends NextDocument {
           <link rel="preconnect" href="https://fonts.gstatic.com"/>
           <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
           <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;700&display=swap" rel="stylesheet"/>
-
         </Head>
         <body>
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />

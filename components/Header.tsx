@@ -39,7 +39,7 @@ export default function Header() {
 
         <Button
           variant="fluo"
-          display={{ base: "block", md: "none" }}
+          display={{ base: "flex", md: "none" }}
           leftIcon={<ExternalLinkIcon/>}
           onClick={openApp}
         >

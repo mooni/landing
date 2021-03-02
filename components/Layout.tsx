@@ -9,7 +9,7 @@ export const siteTitle = 'Mooni'
 
 export default function Layout({ children }) {
   return (
-    <Box position="relative">
+    <Box>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -28,9 +28,9 @@ export default function Layout({ children }) {
         <title>{siteTitle}</title>
       </Head>
 
-      <Background />
+      {/*<Background />*/}
 
-      <Box zIndex={2} position="relative">
+      <Box>
         <Header />
 
         <main>{children}</main>

@@ -1,4 +1,4 @@
-import { Flex, Box, Image, Button, Heading, VStack, Stack } from '../components/ui'
+import { Flex, Box, Image, Button, Heading, VStack, Stack, Center } from '../components/ui'
 import { openDoc, openApp } from '../lib/links'
 
 export default function Hero() {
@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <Box as="section">
       <VStack spacing={8} py={16} px={4}>
-        <Flex
+        {/*<Flex
           align="center"
           position="absolute"
           top={100}
@@ -22,7 +22,7 @@ export default function Hero() {
             src="images/moonrender6_large.png"
             boxSize={500}
           />
-        </Flex>
+        </Flex>*/}
         <Heading
           as="h2"
           size="xxl"
@@ -32,6 +32,7 @@ export default function Hero() {
           fontFamily="'Lato', sans-serif"
           fontWeight={700}
           fontSize={{base: "2rem", sm: "3rem", md: "4rem"}}
+          maxWidth="50rem"
         >
           The easiest way to cashout cryptocurrencies
         </Heading>
@@ -41,6 +42,8 @@ export default function Hero() {
           textAlign="center"
           fontFamily="'Montserrat Alternates', sans-serif"
           fontWeight={300}
+          fontSize={{base: "0.9rem", sm: "1rem", md: "1.2rem"}}
+          maxWidth="50rem"
         >
           Convert between cryptocurrencies in your blockchain wallet to fiat in your bank account, within minutes, without registration.
         </Heading>
@@ -65,24 +68,14 @@ export default function Hero() {
           </Button>
         </Stack>
       </VStack>
-      <Box display="flex" justifyContent="center">
-        <Box position="relative">
-          <Image
-            src="images/cityrender2.png"
-            width="100%"
-            maxWidth="1200px"
-          />
-          {/*
-          <Image
-            src="images/atroatm.png"
-            width="20%"
-            position="absolute"
-            top={150}
-            left={`${leftAstro}%`}
-          />
-*/}
-        </Box>
-      </Box>
+      <Center>
+        <Box
+          bg={`url(images/cityrender3.png) center no-repeat`}
+          bgRepeat="no-repeat"
+          height="450px"
+          width="100%"
+        />
+      </Center>
     </Box>
   );
 }
