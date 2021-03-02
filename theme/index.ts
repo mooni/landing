@@ -65,6 +65,12 @@ const textStyles = {
     fontFamily: '"Lato", sans-serif',
     fontWeight: 400,
     fontSize: "1rem",
+  },
+  appName: {
+    fontFamily: '"Montserrat", sans-serif',
+    fontWeight: 400,
+    textTransform: 'uppercase',
+    letterSpacing: "3px",
   }
 };
 
