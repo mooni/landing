@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { useScroll } from '../lib/utils';
 
-import { Center, Box } from '@chakra-ui/react'
+import { Center, Box } from '../components/ui'
 
 export default function Background() {
   const scroll = useScroll();

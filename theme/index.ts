@@ -12,7 +12,7 @@ const styles = {
       fontFamily: '"Lato", sans-serif',
     },
     "body": {
-      bg: 'radial-gradient(82.17% 210.37% at 0.59% 2.48%, #292c35 0%, #11224D 97.19%)',
+      bg: 'radial-gradient(82.17% 210.37% at 0.59% 2.48%, #0F214D 0%, #11224D 97.19%)',
     },
   },
 };
@@ -50,9 +50,6 @@ const layerStyles = {
     fontFamily: '"Montserrat", sans-serif',
     fontWeight: 400,
   },
-  bgGradient: {
-    bg: 'linear-gradient(110.78deg, rgba(255, 238, 238, 0.68) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.68) 49.98%, rgba(151, 115, 255, 0.76) 68.97%);',
-  }
 };
 
 const textStyles = {
@@ -79,7 +76,7 @@ const textStyles = {
 const colors = {
   sky: {
     600:'#11224D',
-    800:'#292c35',
+    800:'#0f214d',
   },
 };
 

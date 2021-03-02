@@ -1,4 +1,4 @@
-import { Text, Flex, Image, Wrap, WrapItem, Link, Box, VStack, Heading } from '@chakra-ui/react';
+import { Text, Flex, Image, Wrap, WrapItem, Link, Box, VStack, Heading } from '../components/ui';
 
 
 const SectionHead = ({ children }) =>

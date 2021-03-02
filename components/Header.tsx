@@ -1,8 +1,6 @@
 import { InfoOutlineIcon, QuestionIcon, ViewIcon, ExternalLinkIcon } from '@chakra-ui/icons'
-import { Flex, Image, Box, HStack, Button, Heading } from '@chakra-ui/react';
+import { Flex, Image, Box, HStack, Button, Heading } from '../components/ui';
 import { openApp, openDoc } from '../lib/links';
-
-export const siteTitle = 'Mooni'
 
 export default function Header() {
   return (
@@ -18,7 +16,7 @@ export default function Header() {
         as="nav"
         borderBottom="1px solid"
         borderColor="gray.500"
-        bg="sky.600"
+        bg="sky.800"
         px={['1rem', '2rem']}
         py="1rem"
         justify="space-between"

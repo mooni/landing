@@ -1,5 +1,5 @@
-import { Flex, Box, Image, Text, Heading, VStack, Button, Stack } from '@chakra-ui/react'
-// import { useScroll } from '../lib/utils'
+import { Flex, Box, Image, Button, Heading, VStack, Stack } from '../components/ui'
+import { openDoc, openApp } from '../lib/links'
 
 export default function Hero() {
   // const scroll = useScroll();
@@ -51,14 +51,17 @@ export default function Hero() {
           width="90%"
           maxWidth="25rem"
         >
-          <Button variant="fluo">Use Mooni</Button>
-          <Button variant="white">
-            <Text
-              bgGradient="linear-gradient(110.78deg, rgba(255, 238, 238, 0.68) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.68) 49.98%, rgba(151, 115, 255, 0.76) 68.97%);"
-              bgClip="text"
-            >
-              Integrate it
-            </Text>
+          <Button
+            variant="fluo"
+            onClick={openApp}
+          >
+            Use Mooni
+          </Button>
+          <Button
+            variant="white"
+            onClick={openDoc}
+          >
+            Integrate it
           </Button>
         </Stack>
       </VStack>
@@ -69,7 +72,7 @@ export default function Hero() {
             width="100%"
             maxWidth="1200px"
           />
-{/*
+          {/*
           <Image
             src="images/atroatm.png"
             width="20%"

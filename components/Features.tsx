@@ -1,4 +1,4 @@
-import { Box, VStack, Stack, Heading, Image, Text } from '@chakra-ui/react'
+import { Box, VStack, Stack, Heading, Image, Text } from '../components/ui'
 
 function Feature({ image, title, content, reverse= false }) {
   return (
@@ -6,7 +6,7 @@ function Feature({ image, title, content, reverse= false }) {
       px={8}
       py={4}
       spacing={8}
-      direction={["column", "row", reverse ? 'row-reverse' : 'row']}
+      direction={["column", "column", reverse ? 'row-reverse' : 'row']}
       justify="center"
       align="center"
     >
