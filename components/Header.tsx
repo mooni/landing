@@ -35,7 +35,7 @@ export default function Header() {
         </Link>
 
         <HStack
-          spacing={6}
+          spacing={8}
           display={{ base: "none", md: "flex" }}
         >
           <Link href="#features">About</Link>

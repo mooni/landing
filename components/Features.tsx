@@ -11,11 +11,7 @@ function Feature({ image, title, content, reverse= false }) {
       align="center"
       maxWidth="100%"
     >
-        <Image
-          src={image}
-          boxSize={[120, 200, 320]}
-          objectFit="contain"
-        />
+      {image}
         <Box maxWidth="32rem" width="100%">
           <Heading
             align="center"
@@ -47,7 +43,13 @@ export default function Features() {
       <VStack spacing={8}>
         <Feature
           title="Fast cash out"
-          image="images/distrib.png"
+          image={
+            <Image
+              src="images/distrib2.png"
+              boxSize={[120, 200, 320]}
+              objectFit="contain"
+            />
+          }
           content={
             <>
               Mooni wants to improve the world of remote working by giving the option for the people that are being paid in crypto to cash out into their bank account so that they can enjoy off-chain and real-world activities with the salary they earn online.
@@ -58,7 +60,14 @@ export default function Features() {
         />
         <Feature
           title="For decentralised workers"
-          image="images/astro5.png"
+          image={
+            <Image
+              src="images/astrodistrib2.png"
+              boxSize={[120, 200, 320]}
+              objectFit="contain"
+              transform="rotate(15deg)"
+            />
+          }
           reverse
           content={
             <>

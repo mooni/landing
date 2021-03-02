@@ -66,7 +66,7 @@ export default function Hero() {
       </VStack>
       <Center>
         <Box
-          bg={`url(images/cityrender3.png) center no-repeat`}
+          bg={`url(images/cityrender4.png) center no-repeat`}
           bgRepeat="no-repeat"
           height="450px"
           width="100%"

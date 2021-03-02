@@ -90,7 +90,12 @@ export default function FAQ() {
   const [selectedQuestion, setSelectedQuestion] = useState<string|null>(null);
 
   return (
-    <Flex as="section" py={8} id="faq" align="center" direction="column">
+    <Flex as="section" py={8} align="center" direction="column" position="relative">
+      <Box
+        id="faq"
+        position="absolute"
+        top="-80px"
+      />
       <Text textStyle="h2" textAlign="center" mb={2}>
         Frequently Asked Questions
       </Text>
