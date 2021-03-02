@@ -3,7 +3,7 @@ import { Box, Flex, Button, Stack, Image, Text } from '../components/ui';
 
 export default function Grant() {
   return (
-    <Box as="section" id="grant">
+    <Box as="section" py={8} id="grant">
       <Stack
         px={8}
         py={4}

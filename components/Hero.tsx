@@ -1,5 +1,5 @@
 import { Flex, Box, Image, Button, Heading, VStack, Stack, Center } from '../components/ui'
-import { openDoc, openApp } from '../lib/links'
+import { openWidgetSDK, openApp } from '../lib/links'
 
 export default function Hero() {
   // const scroll = useScroll();
@@ -58,7 +58,7 @@ export default function Hero() {
           </Button>
           <Button
             variant="white"
-            onClick={openDoc}
+            onClick={openWidgetSDK}
           >
             Integrate it
           </Button>

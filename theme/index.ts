@@ -71,6 +71,7 @@ const textStyles = {
     fontWeight: 400,
     textTransform: 'uppercase',
     letterSpacing: "3px",
+    lineHeight: 1,
   }
 };
 

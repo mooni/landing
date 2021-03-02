@@ -1,5 +1,5 @@
 import { InfoOutlineIcon, QuestionIcon, ViewIcon, ExternalLinkIcon } from '@chakra-ui/icons'
-import { Flex, Image, Box, HStack, Button, Heading } from '../components/ui';
+import { Flex, Link, Image, Box, HStack, Button, Heading } from '../components/ui';
 import { openApp, openDoc } from '../lib/links';
 
 export default function Header() {
@@ -23,18 +23,21 @@ export default function Header() {
         justify="space-between"
         align="center"
       >
-        <Image
-          height={6}
-          src="images/mooni_name.svg"
-        />
+        <Link onClick={() => window.scroll(0, 0)}>
+          <Image
+            height={6}
+            src="images/mooni_name.svg"
+          />
+        </Link>
+
 
         <HStack
           spacing={4}
           display={{ base: "none", md: "flex" }}
         >
-          <Button variant="link" leftIcon={<InfoOutlineIcon/>} colorScheme="purple">About</Button>
-          <Button variant="link" leftIcon={<QuestionIcon/>} colorScheme="purple">FAQ</Button>
-          <Button variant="link" leftIcon={<ViewIcon/>} colorScheme="purple" onClick={openDoc}>Developers</Button>
+          <Link href="#faq">About</Link>
+          <Link href="#features">FAQ</Link>
+          <Link onClick={openDoc}>Developers</Link>
           <Button variant="fluo" onClick={openApp}>Use Mooni</Button>
         </HStack>
 
