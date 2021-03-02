@@ -1,4 +1,5 @@
 import { extendTheme, ColorMode } from "@chakra-ui/react"
+import { Heading } from '../components/ui'
 
 const config = {
   initialColorMode: "dark" as ColorMode,
@@ -44,24 +45,21 @@ const components = {
 const layerStyles = {};
 
 const textStyles = {
+  h1: {
+    fontFamily: '"Montserrat", sans-serif',
+    fontWeight: 600,
+  },
   h2: {
     fontFamily: '"Montserrat", sans-serif',
     fontWeight: "bold",
-    lineHeight: "110%",
-    letterSpacing: "-2%",
   },
   h3: {
     fontFamily: '"Montserrat", sans-serif',
     fontWeight: 600,
-    fontSize: "4rem",
-    lineHeight: "110%",
-    letterSpacing: "-1%",
   },
   h4: {
-    fontFamily: '"Lato", sans-serif',
-    fontWeight: "light",
-    lineHeight: "110%",
-    letterSpacing: "-1%",
+    fontFamily: "'Montserrat Alternates', sans-serif",
+    fontWeight: 300,
   },
   paragraph: {
     fontFamily: '"Lato", sans-serif',

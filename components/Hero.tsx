@@ -24,13 +24,11 @@ export default function Hero() {
           // sx={{ "mix-blend-mode": "overlay"}}
         />
         <Heading
-          as="h2"
-          size="xxl"
+          as="h1"
+          textStyle="h1"
           textAlign="center"
           bgGradient="linear-gradient(110.78deg, rgba(255, 238, 238, 0.68) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.68) 49.98%, rgba(151, 115, 255, 0.76) 68.97%);"
           bgClip="text"
-          fontFamily="'Lato', sans-serif"
-          fontWeight={700}
           fontSize={{base: "2rem", sm: "3rem", md: "4rem"}}
           maxWidth="50rem"
         >
@@ -38,10 +36,8 @@ export default function Hero() {
         </Heading>
         <Heading
           as="h4"
-          size="md"
+          textStyle="h4"
           textAlign="center"
-          fontFamily="'Montserrat Alternates', sans-serif"
-          fontWeight={300}
           fontSize={{base: "0.9rem", sm: "1rem", md: "1.2rem"}}
           maxWidth="50rem"
         >

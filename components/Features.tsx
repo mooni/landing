@@ -9,16 +9,18 @@ function Feature({ image, title, content, reverse= false }) {
       direction={["column", "column", reverse ? 'row-reverse' : 'row']}
       justify="center"
       align="center"
+      maxWidth="100%"
     >
         <Image
           src={image}
           boxSize={[120, 200, 320]}
           objectFit="contain"
         />
-        <Box maxWidth="32rem">
+        <Box maxWidth="32rem" width="100%">
           <Heading
             align="center"
             textStyle="h3"
+            fontSize={["2xl", "4xl"]}
             color={reverse ? 'rgba(198, 178, 255, 1)' : 'rgba(255, 177, 179, 1)'}
             mb={8}
           >
