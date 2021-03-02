@@ -8,9 +8,13 @@ const config = {
 
 const styles = {
   global: {
-    "html": {
+    "html, body": {
       fontFamily: '"Lato", sans-serif',
     },
+    "a": {
+      color: '#FFFEF2',
+      fontWeight: 300,
+    }
   },
 };
 

@@ -1,23 +1,26 @@
+import { useMemo } from 'react'
+
 import { InfoOutlineIcon, QuestionIcon, ViewIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import { Flex, Link, Image, Box, HStack, Button, Heading } from '../components/ui';
 import { openApp, openDoc } from '../lib/links';
+import { useScroll } from '../lib/utils'
 
 export default function Header() {
+  const scroll = useScroll();
+  const scrolled = useMemo(() => scroll > 200, [scroll]);
+
   return (
     <Box
       as="header"
-      h="75px"
+      position="sticky"
+      top="0"
+      zIndex={10}
+      transition="background-color 0.25s ease 0s;"
+      bg={scrolled && 'sky.800'}
+      borderBottom={scrolled && "1px solid rgb(41, 44, 47)"}
     >
       <Flex
-        position="fixed"
-        zIndex={10}
-        top={0}
-        left={0}
-        right={0}
         as="nav"
-        borderBottom="1px solid"
-        borderColor="gray.500"
-        bg="sky.800"
         px={['1rem', '2rem']}
         py="1rem"
         justify="space-between"
@@ -30,9 +33,8 @@ export default function Header() {
           />
         </Link>
 
-
         <HStack
-          spacing={4}
+          spacing={6}
           display={{ base: "none", md: "flex" }}
         >
           <Link href="#faq">About</Link>
