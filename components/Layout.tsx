@@ -28,7 +28,7 @@ export default function Layout({ children }) {
         <title>{siteTitle}</title>
       </Head>
 
-      {/*<Background />*/}
+      <Background />
 
       <Box>
         <Header />

@@ -8,11 +8,7 @@ const config = {
 const styles = {
   global: {
     "html": {
-      bg: '#11224D',
       fontFamily: '"Lato", sans-serif',
-    },
-    "body": {
-      bg: 'radial-gradient(82.17% 210.37% at 0.59% 2.48%, #0F214D 0%, #11224D 97.19%)',
     },
   },
 };
