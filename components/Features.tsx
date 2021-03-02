@@ -19,9 +19,8 @@ function Feature({ image, title, content, reverse= false }) {
         <Box maxWidth="32rem" width="100%">
           <Heading
             align="center"
-            textStyle="h3"
-            fontSize={["2xl", "4xl"]}
-            color={reverse ? 'rgba(198, 178, 255, 1)' : 'rgba(255, 177, 179, 1)'}
+            textStyle="h2"
+            color={reverse ? 'orange.600' : 'purple.600'}
             mb={8}
           >
             {title}

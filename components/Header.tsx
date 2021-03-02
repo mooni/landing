@@ -1,13 +1,13 @@
 import { useMemo } from 'react'
 
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Flex, Link, Image, Box, HStack, Button } from '../components/ui';
+import { Flex, Link, Image, Box, HStack, Button, Wrap } from '../components/ui'
 import { openApp, openDoc } from '../lib/links';
 import { useScroll } from '../lib/utils'
 
 export default function Header() {
   const scroll = useScroll();
-  const scrolled = useMemo(() => scroll > 200, [scroll]);
+  const scrolled = useMemo(() => scroll > 80, [scroll]);
 
   return (
     <Box
@@ -16,8 +16,9 @@ export default function Header() {
       top="0"
       zIndex={10}
       transition="background-color 0.25s ease 0s;"
-      bg={scrolled && 'sky.800'}
-      borderBottom={scrolled && "1px solid rgb(41, 44, 47)"}
+      bg={scrolled && 'sky.300'}
+      sx={scrolled ? { 'backdrop-filter': 'blur(10px)' } : undefined}
+      borderBottom={scrolled && "1px solid #d5d8da75"}
     >
       <Flex
         as="nav"

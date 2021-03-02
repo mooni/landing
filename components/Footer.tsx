@@ -15,20 +15,18 @@ const SectionLink = ({ children, onClick }) =>
 export default function Header() {
   return (
     <Box
-      pt={4}
+      mt={4}
       as="footer"
     >
       <Wrap
-        borderTop="1px solid"
-        borderColor="gray.500"
-        bg="linear-gradient(110.78deg, rgba(255, 238, 238, 0.68) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.68) 49.98%, rgba(151, 115, 255, 0.76) 68.97%);"
+        layerStyle="gradientTransparent"
+        sx={{ 'backdrop-filter': 'blur(4px)' }}
         px={["1rem", "1rem", "2rem", "4rem"]}
-        py="1rem"
         justify="space-between"
         wrap="wrap"
         spacing={8}
+        py={8}
       >
-
         <WrapItem>
           <VStack align="left">
             <Flex align="center">

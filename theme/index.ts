@@ -1,5 +1,4 @@
 import { extendTheme, ColorMode } from "@chakra-ui/react"
-import { Heading } from '../components/ui'
 
 const config = {
   initialColorMode: "dark" as ColorMode,
@@ -10,6 +9,7 @@ const styles = {
   global: {
     "html, body": {
       fontFamily: '"Lato", sans-serif',
+      fontSize: '16px',
     },
     "a": {
       color: '#FFFEF2',
@@ -21,9 +21,8 @@ const styles = {
 const components = {
   Button: {
     baseStyle: {
-      fontSize: '1rem',
       fontFamily: '"Montserrat", sans-serif',
-      fontWeight: 'bold',
+      fontWeight: 700,
       textTransform: 'uppercase'
     },
     variants: {
@@ -46,29 +45,46 @@ const components = {
   }
 };
 
-const layerStyles = {};
+const layerStyles = {
+  gradient: {
+    bg: 'linear-gradient(110.78deg, rgba(255, 238, 238, 0.68) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.68) 49.98%, rgba(151, 115, 255, 0.76) 68.97%)',
+  },
+  gradientTransparent: {
+    bg: 'linear-gradient(110.78deg, rgba(255, 238, 238, 0.34) -3.19%, rgba(255, 115, 117, 0.41) 1.75%, rgba(227, 115, 255, 0.34) 49.98%, rgba(151, 115, 255, 0.38) 68.97%)',
+  }
+};
 
 const textStyles = {
   h1: {
     fontFamily: '"Montserrat", sans-serif',
     fontWeight: 600,
+    fontSize: ['1.3rem', '2rem', '3rem'],
   },
   h2: {
     fontFamily: '"Montserrat", sans-serif',
-    fontWeight: "bold",
+    fontWeight: 600,
+    fontSize: ['1.3rem', '2rem', '3rem'],
   },
   h3: {
     fontFamily: '"Montserrat", sans-serif',
     fontWeight: 600,
   },
   h4: {
-    fontFamily: "'Montserrat Alternates', sans-serif",
+    fontFamily: "'Montserrat', sans-serif",
     fontWeight: 300,
+    fontSize: ['1rem', '1rem', '1.5rem'],
   },
   paragraph: {
     fontFamily: '"Lato", sans-serif',
     fontWeight: 400,
     fontSize: "1rem",
+  },
+  caption: {
+    fontFamily: "'Montserrat', sans-serif",
+    fontWeight: 700,
+    textTransform: 'lowercase',
+    fontSize: '1.2rem',
+    fontVariant: 'small-caps',
   },
   appName: {
     fontFamily: '"Montserrat", sans-serif',
@@ -81,8 +97,21 @@ const textStyles = {
 
 const colors = {
   sky: {
-    600:'#11224D',
-    800:'#0f214d',
+    300: '#11224dd3',
+    600: '#11224D',
+    800: '#0f214d',
+  },
+  purple: {
+    600: '#C6B2FF',
+    800: '#9773FF',
+  },
+  orange: {
+    600: '#FFB1B3',
+    800: '#FF7375',
+  },
+  yellow: {
+    600: '#C4C4C4',
+    800: '#FFFEF2',
   },
 };
 
