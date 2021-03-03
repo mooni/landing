@@ -1,4 +1,4 @@
-import { Box, VStack, Stack, Heading, Image, Text } from '../components/ui'
+import { Box, Flex, VStack, Link, Stack, Heading, Image, Text } from '../components/ui'
 
 function Feature({ image, title, content, reverse= false }) {
   return (
@@ -9,39 +9,69 @@ function Feature({ image, title, content, reverse= false }) {
       direction={["column", "column", reverse ? 'row-reverse' : 'row']}
       justify="center"
       align="center"
-      maxWidth="100%"
     >
       {image}
-        <Box maxWidth="32rem" width="100%">
-          <Heading
-            as="h2"
-            textAlign="center"
-            textStyle="h2"
-            color={reverse ? 'orange.600' : 'purple.600'}
-            mb={8}
-          >
-            {title}
-          </Heading>
-          <Text
-            textStyle="normal"
-            align="center"
-          >
-            {content}
-          </Text>
-        </Box>
+      <Box maxWidth="32rem" width="100%">
+        <Heading
+          as="h2"
+          textAlign="center"
+          textStyle="h2"
+          color={reverse ? 'orange.600' : 'purple.600'}
+          mb={8}
+        >
+          {title}
+        </Heading>
+        <Text
+          textStyle="normal"
+          align="center"
+          // align={reverse ? 'left' : 'right'}
+        >
+          {content}
+        </Text>
+      </Box>
     </Stack>
   );
 }
 
 export default function Features() {
   return (
-    <Box as="section" py={8} position="relative">
+    <Flex
+      as="section"
+      py={8}
+      position="relative"
+      justify="center"
+    >
       <Box
         id="features"
         position="absolute"
         top="-80px"
       />
-      <VStack spacing={8}>
+      <VStack
+        spacing={8}
+        maxWidth="4xl"
+        width="100%"
+      >
+        <Feature
+          title="For decentralised workers"
+          image={
+            <Image
+              src="images/astro5.png"
+              boxSize={[120, 200, 320]}
+              objectFit="contain"
+              transform="rotate(15deg)"
+            />
+          }
+          content={
+            <>
+              <Text>
+                Whether you are making a living on <b>bounties</b>, <b>trading</b>, <b>lending</b> or <b>NFT art</b>, Mooni is the place where you will be able to cash out your revenues and <b>spend in real life</b>. Because most day-to-day spending like groceries, rent or health insurance still needs to be paid in fiat.
+              </Text>
+              <Text mt={2}>
+                Engage now in the <Link to="https://gitcoin.co/vision" isExternal color="purple.600"><b>Future of Work</b></Link> while keeping your <b>favorite bank account</b> with you.
+              </Text>
+            </>
+          }
+        />
         <Feature
           title="The missing off-ramp"
           image={
@@ -53,32 +83,17 @@ export default function Features() {
           }
           content={
             <>
-              Mooni wants to improve the world of remote working by giving the option for the people that are being paid in crypto to cash out into their bank account so that they can enjoy off-chain and real-world activities with the salary they earn online.
-              <br/>
-              Want to see how it works ?
+              <Text>
+                There is a growing number of platforms which allows to easily <b>generate revenue online</b> for anyone in the world. Most of these platforms integrate on-ramping services to onboard new users, but <b>do not propose</b> a solution to off-ramp when they want to exit.
+              </Text>
+              <Text  mt={2}>
+                Mooni <b>supports most of the tokens</b> in the <b>Ethereum DeFi</b> ecosystem as a payment, and can easily be integrated into any dApp.
+              </Text>
             </>
-          }
-        />
-        <Feature
-          title="For decentralised workers"
-          image={
-            <Image
-              src="images/astro5.png"
-              boxSize={[120, 200, 320]}
-              objectFit="contain"
-              transform="rotate(15deg)"
-            />
           }
           reverse
-          content={
-            <>
-              Many platforms today enable people to generate revenue in crypto online, from anywhere in the world, without entry barriers, such as:  Gitcoin, Ethlance, Origin, Cryptocribs, Idle.finance, Pool together.
-              <br/>
-              The universe of the things we can buy with crypto is expanding, but today, it is still hard to spend a living with it. Things like groceries, rents or health insurance still requires to have a bank account and fiat.
-            </>
-          }
         />
       </VStack>
-    </Box>
+    </Flex>
   );
 }

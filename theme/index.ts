@@ -11,10 +11,14 @@ const styles = {
     "html, body": {
       fontFamily: '"Lato", sans-serif',
       fontSize: '16px',
+      fontWeight: 300,
     },
     "a": {
       color: '#FFFEF2',
       fontWeight: 300,
+    },
+    "b": {
+      fontWeight: 400,
     }
   },
 };
@@ -85,10 +89,15 @@ const textStyles = {
     fontWeight: 300,
     fontSize: ['1rem', '1rem', '1.5rem'],
   },
-  normal: {
+  semibold: {
     fontFamily: '"Lato", sans-serif',
     fontWeight: 400,
-    fontSize: "1rem",
+    fontSize: "1.1rem",
+  },
+  normal: {
+    fontFamily: '"Lato", sans-serif',
+    fontWeight: 300,
+    fontSize: "1.1rem",
   },
   small: {
     fontFamily: '"Lato", sans-serif',

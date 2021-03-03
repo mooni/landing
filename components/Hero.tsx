@@ -41,7 +41,7 @@ export default function Hero() {
           fontSize={{base: "0.9rem", sm: "1rem", md: "1.2rem"}}
           maxWidth="50rem"
         >
-          Convert between cryptocurrencies in your blockchain wallet to fiat in your bank account, within minutes.
+          Convert between <b>cryptocurrencies</b> in your blockchain wallet to <b>fiat</b> in your bank account, within minutes.
         </Heading>
         <Stack
           direction={["column", "row"]}
