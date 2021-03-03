@@ -22,14 +22,14 @@ const SectionLink = ({ children, to, ...props }) =>
     {children}
   </AutoLink>
 
-export default function Header() {
+export default function Footer() {
   return (
     <Box
       mt={4}
       as="footer"
+      layerStyle="gradientTransparent"
     >
       <Wrap
-        layerStyle="gradientTransparent"
         sx={{ 'backdrop-filter': 'blur(4px)' }}
         px={["1rem", "1rem", "2rem", "4rem"]}
         justify="space-between"
@@ -88,15 +88,14 @@ export default function Header() {
           </Wrap>
         </WrapItem>
       </Wrap>
-      <Box my={4}>
-        <Text
-          align="center"
-          textStyle="normal"
-          fontSize="sm"
-        >
-          © 2021 Mooni LLC. All rights reserved
-        </Text>
-      </Box>
+      <Text
+        align="center"
+        textStyle="normal"
+        fontSize="sm"
+        pb={8}
+      >
+        © 2021 Mooni LLC. All rights reserved
+      </Text>
     </Box>
   )
 }
