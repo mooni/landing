@@ -30,10 +30,17 @@ export default function Header() {
         align="center"
       >
         <Link onClick={() => window.scroll(0, 0)}>
-          <Image
-            height={6}
-            src="images/mooni_name.svg"
-          />
+          <Flex align="center">
+            <Icon
+              icon="moon_logo_white"
+              size={30}
+              mr={4}
+            />
+            <Image
+              height={6}
+              src="images/mooni_name.svg"
+            />
+          </Flex>
         </Link>
 
         <HStack
@@ -45,11 +52,11 @@ export default function Header() {
             variant="link"
             href="#features"
             leftIcon={
-            <Icon
-              icon={'info'}
-              size={4}
-            />
-          }>
+              <Icon
+                icon={'info'}
+                size={4}
+              />
+            }>
             About
           </Button>
           <Button
@@ -57,11 +64,11 @@ export default function Header() {
             variant="link"
             href="#faq"
             leftIcon={
-            <Icon
-              icon={'exchange'}
-              size={4}
-            />
-          }>
+              <Icon
+                icon={'exchange'}
+                size={4}
+              />
+            }>
             FAQ
           </Button>
           <AutoButtonLink
@@ -69,11 +76,11 @@ export default function Header() {
             variant="link"
             to="doc"
             leftIcon={
-            <Icon
-              icon={'code'}
-              size={4}
-            />
-          }>
+              <Icon
+                icon={'code'}
+                size={4}
+              />
+            }>
             Developers
           </AutoButtonLink>
 

@@ -1,8 +1,8 @@
-import { Text, Flex, HStack, Image, Wrap, WrapItem, Link, Box, VStack, Heading } from '../components/ui';
+import { Text, Flex, HStack, Wrap, WrapItem, Box, VStack, Heading } from '../components/ui';
 import { AutoLink } from './Links'
+import { Icon } from './Icons'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import { faDiscord, faGithub, faTwitter, faReddit } from '@fortawesome/free-brands-svg-icons'
 
 const SectionHead = ({ children }) =>
@@ -40,9 +40,9 @@ export default function Header() {
         <WrapItem>
           <VStack align="left">
             <Flex align="center">
-              <Image
-                src="images/moon_logo_white.svg"
-                boxSize={30}
+              <Icon
+                icon="moon_logo_white"
+                size={30}
                 mr={4}
               />
               <Text
