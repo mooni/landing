@@ -24,8 +24,8 @@ export const AutoButtonLink = ({ to, children, ...props }) => (
   <Button
     as="a"
     href={links[to]}
-    isExternal
     target="_blank"
+    rel="noopener"
     {...props}
   >
     {children}
