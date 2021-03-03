@@ -32,7 +32,7 @@ export default function Hero() {
           fontSize={{base: "2rem", sm: "3rem", md: "4rem"}}
           maxWidth="50rem"
         >
-          Easy crypto cash out
+          Easiest crypto cash out
         </Heading>
         <Heading
           as="h4"
@@ -41,7 +41,7 @@ export default function Hero() {
           fontSize={{base: "0.9rem", sm: "1rem", md: "1.2rem"}}
           maxWidth="50rem"
         >
-          Convert between <b>cryptocurrencies</b> in your blockchain wallet to <b>fiat</b> in your bank account, within minutes.
+          Effortlessly convert <b>cryptocurrencies</b> from your blockchain wallet, into <b>fiat</b> to your bank account, within minutes.
         </Heading>
         <Stack
           direction={["column", "row"]}

@@ -64,7 +64,7 @@ export default function Features() {
           content={
             <>
               <Text>
-                Whether you are making a living on <b>bounties</b>, <b>trading</b>, <b>lending</b> or <b>NFT art</b>, Mooni is the place where you will be able to cash out your revenues and <b>spend in real life</b>. Because most day-to-day spending like groceries, rent or health insurance still needs to be paid in fiat.
+                Whether you are making a living on <b>bounties</b>, <b>trading</b>, <b>lending</b>, <b>NFT art</b>, or a <b>decentralized finance</b> power user, Mooni is the place where you will be able to cash out your revenues and <b>spend in real life</b>. Because most day-to-day spendings like groceries, rent or health insurance still need to be paid in fiat.
               </Text>
               <Text  mt={2}>
                 Mooni <b>supports most of the tokens</b> in the <b>Ethereum DeFi</b> ecosystem as a payment, and can easily be integrated into any dApp.

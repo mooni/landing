@@ -85,7 +85,12 @@ const list = [
   {
     key: 'currency',
     question: 'How much can I transfer ?',
-    response: 'Exchanges are currently limited to approximately 1000€ per day.',
+    response: 'As we don’t require KYC verification, exchanges are currently limited to approximately 1000€ per day. The maximum annual amount is 100.000€.',
+  },
+  {
+    key: 'currencies',
+    question: 'Which cryptocurrencies are supported ?',
+    response: 'Currently, Mooni supports all Ether and ERC-20 tokens. L2s and other blockchains such as Matic, xDai, and Bitcoin will be supported soon.',
   },
   {
     key: 'cost',

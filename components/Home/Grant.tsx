@@ -23,7 +23,7 @@ export default function Grant() {
             align="center"
           >
 
-            Mooni have been <b>community-funded</b> from day 1, without VCs, and will stay like this.
+            Mooni has been <b>community-funded</b> from day 1, without VCs, and will remain as such.
             <br/>
             If you want to support the development of this project, <b>we're hosting a grant on Gitcoin</b>.
             <br/>
