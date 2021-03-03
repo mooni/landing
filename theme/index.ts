@@ -40,7 +40,8 @@ const components = {
         color: 'rgba(151, 115, 255, 0.76)',
       },
       link: {
-        fontWeight: 'light',
+        textTransform: 'initial',
+        fontWeight: 300,
       },
     }
   }

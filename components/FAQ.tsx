@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import { VStack, Image, Flex, Text, Box } from '../components/ui'
 import { AutoLink } from './Links'
+import { Icon } from './Icons'
 
 const Question = ({ children, open, ...props }) => (
   <Box
@@ -17,9 +18,9 @@ const Question = ({ children, open, ...props }) => (
       <Text textStyle="caption">
         {children}
       </Text>
-      <Image
-        src={`icons/${open ? 'arrow_up' : 'arrow_down'}.svg`}
-        boxSize={4}
+      <Icon
+        icon={open ? 'arrow_up' : 'arrow_down'}
+        size={4}
         ml={4}
       />
     </Flex>

@@ -63,7 +63,7 @@ export default function Features() {
           title="For decentralised workers"
           image={
             <Image
-              src="images/astrodistrib2.png"
+              src="images/astro5.png"
               boxSize={[120, 200, 320]}
               objectFit="contain"
               transform="rotate(15deg)"

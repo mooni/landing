@@ -10,11 +10,11 @@ export const Button = ({ variant = undefined, children, ...props }) => (
   >
     <Text
       layerStyle={variant === 'white' ? "textGradient" : undefined}
-      fontSize="1.3rem"
-      lineHeight="24px"
-      marginBottom="2px"
-      textTransform="lowercase"
-      sx={{'font-variant': 'small-caps'}}
+      fontSize={variant !== 'link' ? "1.3rem" : undefined}
+      lineHeight={variant !== 'link' ? "24px" : undefined}
+      marginBottom={variant !== 'link' ? "2px" : undefined}
+      textTransform={variant !== 'link' ? "lowercase" : undefined}
+      sx={variant !== 'link' ? {'font-variant': 'small-caps'} : undefined}
     >
       {children}
     </Text>

@@ -1,9 +1,10 @@
 import { useMemo } from 'react'
 
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Flex, Link, Image, Box, HStack } from '../components/ui'
+import { Button, Flex, Link, Image, Box, HStack } from '../components/ui'
 import { AutoLink, AutoButtonLink } from './Links'
 import { useScroll } from '../lib/utils'
+import { Icon } from './Icons'
 
 export default function Header() {
   const scroll = useScroll();
@@ -39,9 +40,43 @@ export default function Header() {
           spacing={8}
           display={{ base: "none", md: "flex" }}
         >
-          <Link href="#features">About</Link>
-          <Link href="#faq">FAQ</Link>
-          <AutoLink to="doc">Developers</AutoLink>
+          <Button
+            as="a"
+            variant="link"
+            href="#features"
+            leftIcon={
+            <Icon
+              icon={'info'}
+              size={4}
+            />
+          }>
+            About
+          </Button>
+          <Button
+            as="a"
+            variant="link"
+            href="#faq"
+            leftIcon={
+            <Icon
+              icon={'exchange'}
+              size={4}
+            />
+          }>
+            FAQ
+          </Button>
+          <AutoButtonLink
+            as="a"
+            variant="link"
+            to="doc"
+            leftIcon={
+            <Icon
+              icon={'code'}
+              size={4}
+            />
+          }>
+            Developers
+          </AutoButtonLink>
+
           <AutoButtonLink
             variant="fluo"
             to="app"
