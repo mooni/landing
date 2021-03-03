@@ -12,6 +12,7 @@ const Question = ({ children, open, ...props }) => (
     px="2rem"
     py="0.5rem"
     borderRadius="12px"
+    cursor="pointer"
     {...props}
   >
     <Flex justify="space-between" align="center">
@@ -83,8 +84,18 @@ const list = [
   },
   {
     key: 'currency',
-    question: 'Wfdsfoijdsqf ?',
-    response: 'dqsfsqdf comqdssdqson web3-dqsdfqsdsq walleqst can be used. As now, you can use Metamask, Pfdsqfqsg Wallet, df Wallet...',
+    question: 'How much can I transfer ?',
+    response: 'Exchanges are currently limited to approximately 1000€ per day.',
+  },
+  {
+    key: 'cost',
+    question: 'How much does it cost ?',
+    response: 'Our base fee is 2.8% per transaction. It may depend on the exchanged amount, the exact amount is displayed on the app when placing an order. You also have to pay for blockchain transaction fees which can vary depending on market conditions.',
+  },
+  {
+    key: 'regulation',
+    question: 'Is it financially regulated ?',
+    response: 'As we limit orders to small amounts, and only propose cryptocurrency selling, this allows us to bypass full KYC verifications. Exchanges and bank transfers are managed by third-party brokers which are FCA compliant.',
   },
 ];
 

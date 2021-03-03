@@ -11,7 +11,7 @@ function Feature({ image, title, content, reverse= false }) {
       align="center"
     >
       {image}
-      <Box maxWidth="32rem" width="100%">
+      <Box width="100%">
         <Heading
           as="h2"
           textAlign="center"
@@ -48,7 +48,7 @@ export default function Features() {
       />
       <VStack
         spacing={8}
-        maxWidth="4xl"
+        maxWidth="6xl"
         width="100%"
       >
         <Feature
@@ -66,7 +66,10 @@ export default function Features() {
               <Text>
                 Whether you are making a living on <b>bounties</b>, <b>trading</b>, <b>lending</b> or <b>NFT art</b>, Mooni is the place where you will be able to cash out your revenues and <b>spend in real life</b>. Because most day-to-day spending like groceries, rent or health insurance still needs to be paid in fiat.
               </Text>
-              <Text mt={2}>
+              <Text  mt={2}>
+                Mooni <b>supports most of the tokens</b> in the <b>Ethereum DeFi</b> ecosystem as a payment, and can easily be integrated into any dApp.
+              </Text>
+              <Text  mt={2}>
                 Engage now in the <Link to="https://gitcoin.co/vision" isExternal color="purple.600"><b>Future of Work</b></Link> while keeping your <b>favorite bank account</b> with you.
               </Text>
             </>
@@ -86,8 +89,8 @@ export default function Features() {
               <Text>
                 There is a growing number of platforms which allows to easily <b>generate revenue online</b> for anyone in the world. Most of these platforms integrate on-ramping services to onboard new users, but <b>do not propose</b> a solution to off-ramp when they want to exit.
               </Text>
-              <Text  mt={2}>
-                Mooni <b>supports most of the tokens</b> in the <b>Ethereum DeFi</b> ecosystem as a payment, and can easily be integrated into any dApp.
+              <Text mt={2}>
+                Creating an account, passing KYC verifications, depositing coins, exchanging and withdrawing fiat on centralized exchanges is a long and tedious process. Mooni <b>removes this friction</b> by proposing a <b>quick</b>, <b>non-custodial</b> and <b>KYC-less</b> checkout, like an ATM.
               </Text>
             </>
           }

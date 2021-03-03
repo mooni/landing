@@ -17,12 +17,17 @@ export default function Grant() {
           boxSize={[120, 200, 320]}
           objectFit="contain"
         />
-        <Flex maxWidth="32rem" align="center" direction="column">
+        <Flex maxWidth="3xl" align="center" direction="column">
           <Text
             textStyle="normal"
             align="center"
           >
-            We're hosting a grant on Gitcoin, where anyone can participate to the funding of this project. During CLR rounds, donations are quadraticly matched !
+
+            Mooni have been <b>community-funded</b> from day 1, without VCs, and will stay like this.
+            <br/>
+            If you want to support the development of this project, <b>we're hosting a grant on Gitcoin</b>.
+            <br/>
+            During CLR rounds, donations are quadratically matched !
           </Text>
           <AutoButtonLink
             variant="white"
