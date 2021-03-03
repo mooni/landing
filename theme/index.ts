@@ -1,5 +1,5 @@
 import { extendTheme, ColorMode } from "@chakra-ui/react"
-import { Heading } from '../components/ui'
+import { Heading, Text } from '../components/ui'
 
 const config = {
   initialColorMode: "dark" as ColorMode,
@@ -47,6 +47,9 @@ const components = {
 };
 
 const layerStyles = {
+  skyGradient: {
+    bg: 'radial-gradient(82.17% 210.37% at 0.59% 2.48%, #0F214D 0%, #11224D 97.19%)',
+  },
   gradient: {
     bg: 'linear-gradient(110.78deg, rgba(255, 238, 238, 0.68) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.68) 49.98%, rgba(151, 115, 255, 0.76) 68.97%)',
   },
@@ -73,6 +76,8 @@ const textStyles = {
   h3: {
     fontFamily: '"Montserrat", sans-serif',
     fontWeight: 600,
+    fontSize: ['1.1rem', '1.1rem', '1.2rem'],
+    textTransform: 'uppercase',
   },
   h4: {
     fontFamily: "'Montserrat', sans-serif",
@@ -102,7 +107,13 @@ const textStyles = {
     textTransform: 'uppercase',
     letterSpacing: "3px",
     lineHeight: 1,
-  }
+    fontSize: "1.8rem",
+  },
+  appPunchline: {
+    fontFamily: '"Montserrat", sans-serif',
+    fontWeight: 600,
+    fontSize: "0.9rem",
+  },
 };
 
 const colors = {
@@ -123,6 +134,9 @@ const colors = {
     600: '#C4C4C4',
     800: '#FFFEF2',
   },
+  border: {
+    300: '#d5d8da75',
+  }
 };
 
 export default extendTheme({

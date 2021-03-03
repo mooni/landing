@@ -6,10 +6,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faGithub, faTwitter, faReddit } from '@fortawesome/free-brands-svg-icons'
 
 const SectionHead = ({ children }) =>
-  <Heading textStyle="h3" fontSize="1.2rem" fontWeight="bold">{children}</Heading>
+  <Heading
+    as="h3"
+    textStyle="h3"
+  >
+    {children}
+  </Heading>
 
 const SectionLink = ({ children, to, ...props }) =>
-  <AutoLink textStyle="normal" to={to} {...props}>{children}</AutoLink>
+  <AutoLink
+    textStyle="normal"
+    to={to}
+    {...props}
+  >
+    {children}
+  </AutoLink>
 
 export default function Header() {
   return (
@@ -34,9 +45,18 @@ export default function Header() {
                 boxSize={30}
                 mr={4}
               />
-              <Text textStyle="appName" fontSize="1.8rem">Mooni</Text>
+              <Text
+                textStyle="appName"
+              >
+                Mooni
+              </Text>
             </Flex>
-            <Text textStyle="h3"  mb={2} fontSize="0.9rem">The easiest crypto off ramp</Text>
+            <Text
+              textStyle="appPunchline"
+              mb={2}
+            >
+              The easiest crypto off ramp
+            </Text>
             <HStack spacing={3} fontSize="1.5rem">
               <AutoLink to="github"><FontAwesomeIcon icon={faGithub} size="1x" /></AutoLink>
               <AutoLink to="discord" pt={0.5}><FontAwesomeIcon icon={faDiscord} size="1x" /></AutoLink>
