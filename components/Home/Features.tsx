@@ -1,4 +1,4 @@
-import { Box, Flex, VStack, Link, Stack, Heading, Image, Text } from '../components/ui'
+import { Box, Flex, VStack, Link, Stack, Heading, Image, Text } from '../ui'
 
 function Feature({ image, title, content, reverse= false }) {
   return (

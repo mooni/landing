@@ -1,6 +1,6 @@
-import { Box, Heading, VStack, Stack, Center } from '../components/ui'
+import { Box, Heading, VStack, Stack, Center } from '../ui'
 import React from 'react'
-import { AutoButtonLink } from './Links'
+import { AutoButtonLink } from '../Links'
 
 export default function Hero() {
   // const scroll = useScroll();

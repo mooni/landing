@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import { VStack, Image, Flex, Text, Box } from '../components/ui'
-import { AutoLink } from './Links'
-import { Icon } from './Icons'
+import { VStack, Image, Flex, Text, Box } from '../ui'
+import { AutoLink } from '../Links'
+import { Icon } from '../Icons'
 
 const Question = ({ children, open, ...props }) => (
   <Box

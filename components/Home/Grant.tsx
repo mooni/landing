@@ -1,5 +1,5 @@
-import { Box, Flex, Stack, Image, Text } from '../components/ui';
-import { AutoButtonLink } from './Links'
+import { Box, Flex, Stack, Image, Text } from '../ui';
+import { AutoButtonLink } from '../Links'
 
 export default function Grant() {
   return (

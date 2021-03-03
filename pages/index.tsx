@@ -1,8 +1,8 @@
 import Layout from '../components/Layout'
-import Hero from '../components/Hero'
-import Features from '../components/Features'
-import FAQ from '../components/FAQ'
-import Grant from '../components/Grant'
+import Hero from '../components/Home/Hero'
+import Features from '../components/Home/Features'
+import FAQ from '../components/Home/FAQ'
+import Grant from '../components/Home/Grant'
 
 export default function Home() {
   return (
