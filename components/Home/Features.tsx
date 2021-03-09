@@ -20,13 +20,13 @@ function Feature({ image, title, content, reverse = false }) {
         >
           {title}
         </Heading>
-        <Text
+        <Box
           textStyle="normal"
           align="center"
           // align={reverse ? 'left' : 'right'}
         >
           {content}
-        </Text>
+        </Box>
       </Box>
     </Stack>
   )

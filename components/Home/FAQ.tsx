@@ -112,7 +112,7 @@ export default function FAQ() {
         Are you looking for answers ?
       </Text>
 
-      <VStack spacing={4} mt={4} maxWidth="xl" width="95%">
+      <VStack spacing={2} mt={4} maxWidth="xl" width="95%">
         {list.map((item) => (
           <QuestionResponse
             key={item.key}
