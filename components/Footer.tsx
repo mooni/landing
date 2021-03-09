@@ -18,6 +18,9 @@ import {
   faTwitter,
   faReddit,
 } from '@fortawesome/free-brands-svg-icons'
+import {
+  faEnvelope,
+} from '@fortawesome/free-solid-svg-icons'
 
 const SectionHead = ({ children }) => (
   <Heading as="h3" textStyle="h3">
@@ -64,6 +67,9 @@ export default function Footer() {
               <AutoLink to="reddit">
                 <FontAwesomeIcon icon={faReddit} size="1x" />
               </AutoLink>
+              <AutoLink to="mail">
+                <FontAwesomeIcon icon={faEnvelope} size="1x" />
+              </AutoLink>
             </HStack>
           </VStack>
         </WrapItem>
@@ -72,11 +78,17 @@ export default function Footer() {
           <Wrap spacing={8} align="start" wrap="wrap">
             <WrapItem>
               <VStack spacing={2} align="start">
+                <SectionHead>About</SectionHead>
+                <SectionLink to="blog">Blog</SectionLink>
+                <SectionLink to="grant">Gitcoin grant</SectionLink>
+              </VStack>
+            </WrapItem>
+            <WrapItem>
+              <VStack spacing={2} align="start">
                 <SectionHead>Community</SectionHead>
                 <SectionLink to="twitter">Twitter</SectionLink>
                 <SectionLink to="discord">Discord</SectionLink>
                 <SectionLink to="reddit">Reddit</SectionLink>
-                <SectionLink to="grant">Gitcoin grant</SectionLink>
               </VStack>
             </WrapItem>
             <WrapItem>

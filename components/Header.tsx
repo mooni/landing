@@ -1,8 +1,8 @@
 import { useMemo } from 'react'
 
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Button, Flex, Link, Image, Box, HStack } from '../components/ui'
-import { AutoLink, AutoButtonLink } from './Links'
+import { Button, Flex, Link, Image, Box, HStack } from './ui'
+import { AutoButtonLink } from './Links'
 import { useScroll } from '../lib/utils'
 import { Icon } from './Icons'
 
@@ -40,16 +40,9 @@ export default function Header() {
           <Button
             as="a"
             variant="link"
-            href="#features"
-            leftIcon={<Icon icon={'info'} size={4} />}
-          >
-            About
-          </Button>
-          <Button
-            as="a"
-            variant="link"
             href="#faq"
-            leftIcon={<Icon icon={'exchange'} size={4} />}
+            // leftIcon={<Icon icon={'exchange'} size={4} />}
+            fontWeight={400}
           >
             FAQ
           </Button>
@@ -57,9 +50,19 @@ export default function Header() {
             as="a"
             variant="link"
             to="doc"
-            leftIcon={<Icon icon={'code'} size={4} />}
+            fontWeight={400}
+            // leftIcon={<Icon icon={'code'} size={4} />}
           >
             Developers
+          </AutoButtonLink>
+          <AutoButtonLink
+            as="a"
+            variant="link"
+            to="blog"
+            fontWeight={400}
+            // leftIcon={<Icon icon={'info'} size={4} />}
+          >
+            Blog
           </AutoButtonLink>
 
           <AutoButtonLink variant="fluo" to="app">
