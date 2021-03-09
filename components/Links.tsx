@@ -1,4 +1,5 @@
 import { Button, Link } from './ui'
+import { sendEvent } from "../lib/plausible";
 
 const links = {
   app: 'https://app.mooni.tech',
@@ -7,12 +8,12 @@ const links = {
   discord: 'https://discord.mooni.tech',
   twitter: 'https://twitter.com/moonidapp',
   reddit: 'https://reddit.com/r/mooni',
-  github: 'https://github.com/pakokrew/mooni',
+  github: 'https://github.com/mooni/mooni',
   grant: 'https://gitcoin.co/grants/225/mooni-the-easiest-crypto-off-ramp',
 }
 
 export const AutoLink = ({ to, children, ...props }) => (
-  <Link href={links[to]} isExternal {...props}>
+  <Link href={links[to]} isExternal {...props} onClick={() => sendEvent('click_link', {to})}>
     {children}
   </Link>
 )
