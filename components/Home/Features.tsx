@@ -3,7 +3,6 @@ import { Box, Flex, VStack, Link, Stack, Heading, Image, Text } from '../ui'
 function Feature({ image, title, content, reverse= false }) {
   return (
     <Stack
-      px={8}
       py={4}
       spacing={8}
       direction={["column", "column", reverse ? 'row-reverse' : 'row']}
@@ -38,6 +37,7 @@ export default function Features() {
     <Flex
       as="section"
       py={8}
+      px={[8, 12, 16]}
       position="relative"
       justify="center"
     >
@@ -90,7 +90,7 @@ export default function Features() {
                 There is a growing number of platforms which allows to easily <b>generate revenue online</b> for anyone in the world. Most of these platforms integrate on-ramping services to onboard new users, but <b>do not propose</b> a solution to off-ramp when they want to exit.
               </Text>
               <Text mt={2}>
-                Creating an account, passing KYC verifications, depositing coins, exchanging and withdrawing fiat on centralized exchanges is a long and tedious process. Mooni <b>removes this friction</b> by proposing a <b>quick</b>, <b>non-custodial</b> and <b>KYC-less</b> checkout, like an ATM.
+                Creating an account, passing KYC verifications, depositing coins, exchanging and withdrawing fiat on centralised exchanges is a long and tedious process. Mooni <b>removes this friction</b> by proposing a <b>quick</b>, <b>non-custodial</b> and <b>KYC-less</b> checkout, like an ATM.
               </Text>
             </>
           }

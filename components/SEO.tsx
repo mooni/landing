@@ -23,7 +23,7 @@ export default function SEO({ data }) {
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://mooni.tech/" />
           <meta property="og:image" content="https://mooni.tech/images/app_screenshot.jpg" />
-          <meta property="og:description" content="Easy crypto cash out" />
+          <meta property="og:description" content="Easy crypto cash out. Effortlessly convert cryptocurrencies from your blockchain wallet, into fiat to your bank account, within minutes." />
           <meta property="og:site_name" content="Mooni" />
           <meta property="og:video:secure_url" content="https://www.youtube.com/watch?v=99E2U4Qgsrc"/>
           <meta property="og:image:alt" content="Mooni dApp"/>
