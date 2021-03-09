@@ -28,8 +28,8 @@ export default function Hero() {
           as="h1"
           textStyle="h1"
           textAlign="center"
-          layerStyle={"textGradient"}
-          fontSize={{base: "2rem", sm: "3rem", md: "4rem"}}
+          layerStyle={'textGradient'}
+          fontSize={{ base: '2rem', sm: '3rem', md: '4rem' }}
           maxWidth="50rem"
         >
           Easiest crypto cash out
@@ -38,28 +38,23 @@ export default function Hero() {
           as="h4"
           textStyle="h4"
           textAlign="center"
-          fontSize={{base: "0.9rem", sm: "1rem", md: "1.2rem"}}
+          fontSize={{ base: '0.9rem', sm: '1rem', md: '1.2rem' }}
           maxWidth="50rem"
         >
-          Effortlessly convert <b>cryptocurrencies</b> from your blockchain wallet, into <b>fiat</b> to your bank account, within minutes.
+          Effortlessly convert <b>cryptocurrencies</b> from your blockchain
+          wallet, into <b>fiat</b> to your bank account, within minutes.
         </Heading>
         <Stack
-          direction={["column", "row"]}
+          direction={['column', 'row']}
           spacing={4}
           justify="center"
           width="90%"
           maxWidth="25rem"
         >
-          <AutoButtonLink
-            variant="fluo"
-            to="app"
-          >
+          <AutoButtonLink variant="fluo" to="app">
             Use Mooni
           </AutoButtonLink>
-          <AutoButtonLink
-            variant="white"
-            to="widgetSDK"
-          >
+          <AutoButtonLink variant="white" to="widgetSDK">
             Integrate it
           </AutoButtonLink>
         </Stack>
@@ -73,5 +68,5 @@ export default function Hero() {
         />
       </Center>
     </Box>
-  );
+  )
 }

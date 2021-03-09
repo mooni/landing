@@ -1,34 +1,34 @@
-import { extendTheme, ColorMode } from "@chakra-ui/react"
+import { extendTheme, ColorMode } from '@chakra-ui/react'
 import { Heading, Text } from '../components/ui'
 
 const config = {
-  initialColorMode: "dark" as ColorMode,
+  initialColorMode: 'dark' as ColorMode,
   useSystemColorMode: false,
-};
+}
 
 const styles = {
   global: {
-    "html, body": {
+    'html, body': {
       fontFamily: '"Lato", sans-serif',
       fontSize: '16px',
       fontWeight: 300,
     },
-    "a": {
+    a: {
       color: '#FFFEF2',
       fontWeight: 300,
     },
-    "b": {
+    b: {
       fontWeight: 400,
-    }
+    },
   },
-};
+}
 
 const components = {
   Button: {
     baseStyle: {
       fontFamily: '"Montserrat", sans-serif',
       fontWeight: 700,
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
     },
     variants: {
       outline: {
@@ -36,7 +36,8 @@ const components = {
         borderColor: 'rgba(255, 238, 238, 0.68)',
       },
       fluo: {
-        bg: 'linear-gradient(110.78deg, rgba(255, 238, 238, 0.68) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.68) 49.98%, rgba(151, 115, 255, 0.76) 68.97%);',
+        bg:
+          'linear-gradient(110.78deg, rgba(255, 238, 238, 0.68) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.68) 49.98%, rgba(151, 115, 255, 0.76) 68.97%);',
         color: '#FFFEF2',
       },
       white: {
@@ -47,25 +48,29 @@ const components = {
         textTransform: 'initial',
         fontWeight: 300,
       },
-    }
-  }
-};
+    },
+  },
+}
 
 const layerStyles = {
   skyGradient: {
-    bg: 'radial-gradient(82.17% 210.37% at 0.59% 2.48%, #0F214D 0%, #11224D 97.19%)',
+    bg:
+      'radial-gradient(82.17% 210.37% at 0.59% 2.48%, #0F214D 0%, #11224D 97.19%)',
   },
   gradient: {
-    bg: 'linear-gradient(110.78deg, rgba(255, 238, 238, 0.68) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.68) 49.98%, rgba(151, 115, 255, 0.76) 68.97%)',
+    bg:
+      'linear-gradient(110.78deg, rgba(255, 238, 238, 0.68) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.68) 49.98%, rgba(151, 115, 255, 0.76) 68.97%)',
   },
   textGradient: {
-    bgGradient: "linear-gradient(110.78deg, rgba(255, 238, 238, 0.88) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.88) 49.98%, rgba(151, 115, 255, 0.96) 68.97%);",
-    bgClip: "text",
+    bgGradient:
+      'linear-gradient(110.78deg, rgba(255, 238, 238, 0.88) -3.19%, rgba(255, 115, 117, 0.82) 1.75%, rgba(227, 115, 255, 0.88) 49.98%, rgba(151, 115, 255, 0.96) 68.97%);',
+    bgClip: 'text',
   },
   gradientTransparent: {
-    bg: 'linear-gradient(110.78deg, rgba(255, 238, 238, 0.34) -3.19%, rgba(255, 115, 117, 0.41) 1.75%, rgba(227, 115, 255, 0.34) 49.98%, rgba(151, 115, 255, 0.38) 68.97%)',
-  }
-};
+    bg:
+      'linear-gradient(110.78deg, rgba(255, 238, 238, 0.34) -3.19%, rgba(255, 115, 117, 0.41) 1.75%, rgba(227, 115, 255, 0.34) 49.98%, rgba(151, 115, 255, 0.38) 68.97%)',
+  },
+}
 
 const textStyles = {
   h1: {
@@ -92,12 +97,12 @@ const textStyles = {
   semibold: {
     fontFamily: '"Lato", sans-serif',
     fontWeight: 400,
-    fontSize: "1.1rem",
+    fontSize: '1.1rem',
   },
   normal: {
     fontFamily: '"Lato", sans-serif',
     fontWeight: 300,
-    fontSize: "1.1rem",
+    fontSize: '1.1rem',
   },
   small: {
     fontFamily: '"Lato", sans-serif',
@@ -115,16 +120,16 @@ const textStyles = {
     fontFamily: '"Montserrat", sans-serif',
     fontWeight: 400,
     textTransform: 'uppercase',
-    letterSpacing: "3px",
+    letterSpacing: '3px',
     lineHeight: 1,
-    fontSize: "1.8rem",
+    fontSize: '1.8rem',
   },
   appPunchline: {
     fontFamily: '"Montserrat", sans-serif',
     fontWeight: 600,
-    fontSize: "0.9rem",
+    fontSize: '0.9rem',
   },
-};
+}
 
 const colors = {
   sky: {
@@ -146,8 +151,8 @@ const colors = {
   },
   border: {
     300: '#d5d8da75',
-  }
-};
+  },
+}
 
 export default extendTheme({
   config,

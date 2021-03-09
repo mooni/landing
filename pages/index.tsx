@@ -8,8 +8,9 @@ import Grant from '../components/Home/Grant'
 const seoData = {
   title: 'Mooni - Easy crypto cash out',
   description: 'The easiest way to cash out cryptocurrencies',
-  keywords: 'mooni,offramp,crypto off-ramp,fiat,cash out,defi,exchange,ethereum,crypto,cryptocurrency,cryptocurrencies,blockchain,DAI,ETH',
-};
+  keywords:
+    'mooni,offramp,crypto off-ramp,fiat,cash out,defi,exchange,ethereum,crypto,cryptocurrency,cryptocurrencies,blockchain,DAI,ETH',
+}
 
 export default function Home() {
   return (

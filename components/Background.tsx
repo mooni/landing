@@ -1,7 +1,6 @@
 import { Center, Box } from '../components/ui'
 
 export default function Background() {
-
   return (
     <Center
       position="fixed"
@@ -24,7 +23,6 @@ export default function Background() {
         height="100%"
         opacity={0.7}
       />
-
     </Center>
-  );
+  )
 }

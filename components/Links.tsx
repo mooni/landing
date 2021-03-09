@@ -9,25 +9,15 @@ const links = {
   reddit: 'https://reddit.com/r/mooni',
   github: 'https://github.com/pakokrew/mooni',
   grant: 'https://gitcoin.co/grants/225/mooni-the-easiest-crypto-off-ramp',
-};
+}
 
 export const AutoLink = ({ to, children, ...props }) => (
-  <Link
-    href={links[to]}
-    isExternal
-    {...props}
-  >
+  <Link href={links[to]} isExternal {...props}>
     {children}
   </Link>
 )
 export const AutoButtonLink = ({ to, children, ...props }) => (
-  <Button
-    as="a"
-    href={links[to]}
-    target="_blank"
-    rel="noopener"
-    {...props}
-  >
+  <Button as="a" href={links[to]} target="_blank" rel="noopener" {...props}>
     {children}
   </Button>
 )
