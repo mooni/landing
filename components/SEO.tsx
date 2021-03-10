@@ -9,7 +9,7 @@ export default function SEO({ data }) {
       <meta content={data.description} name="description" />
       <meta content={data.keywords} name="keywords" />
 
-      <meta name="language" content="EN" />
+      <meta name="language" content="en" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@moonidapp" />
@@ -17,7 +17,7 @@ export default function SEO({ data }) {
       <meta name="twitter:description" content="Easy crypto cash out" />
       <meta
         name="twitter:image"
-        content="https://mooni.tech/images/seo/app_screenshot.jpg"
+        content="https://mooni.tech/images/seo/twitter_card.jpg"
       />
       <meta name="twitter:image:alt" content="Mooni" />
 

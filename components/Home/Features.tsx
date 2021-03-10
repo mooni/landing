@@ -48,7 +48,7 @@ export default function Features() {
           title="The missing off-ramp"
           image={
             <Image
-              src="images/illus/distrib_ex.png"
+              src="images/gifs/ATM.gif"
               boxSize={[180, 220, 320]}
               objectFit="contain"
             />

@@ -12,7 +12,7 @@ export default function Hero() {
     <Box as="section">
       <VStack spacing={8} py={16} px={4}>
         <Box
-          bg={`url(images/logos/logo_blue.svg) 50% 0% / contain no-repeat`}
+          bg={`url(images/illus/moonrender5.png) 50% 0% / contain no-repeat`}
           width="350px"
           height="350px"
           maxWidth="80%"
