@@ -36,9 +36,13 @@ const SectionLink = ({ children, to, ...props }) => (
 
 export default function Footer() {
   return (
-    <Box mt={4} as="footer" layerStyle="gradientTransparent">
+    <Box
+      mt={4}
+      as="footer"
+      layerStyle="gradientTransparent"
+      sx={{ 'backdropFilter': 'blur(4px)' }}
+    >
       <Wrap
-        sx={{ 'backdrop-filter': 'blur(4px)' }}
         px={['1rem', '1rem', '2rem', '4rem']}
         justify="space-between"
         wrap="wrap"

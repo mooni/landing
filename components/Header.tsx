@@ -18,7 +18,7 @@ export default function Header() {
       zIndex={10}
       transition="background-color 0.25s ease 0s;"
       bg={scrolled && 'sky.300'}
-      sx={scrolled ? { 'backdrop-filter': 'blur(10px)' } : undefined}
+      sx={scrolled ? { 'backdropFilter': 'blur(10px)' } : undefined}
       borderBottom={scrolled && '1px solid'}
       borderColor="border.300"
     >
