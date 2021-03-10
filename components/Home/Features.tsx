@@ -76,7 +76,7 @@ export default function Features() {
           title="For decentralised workers"
           image={
             <Image
-              src="images/illus/astro_code.png"
+              src="images/illus/astro_code.webp"
               boxSize={[220, 300, 320]}
               objectFit="contain"
             />
