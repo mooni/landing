@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { config } from '@fortawesome/fontawesome-svg-core'
 
 import chakraTheme from '../theme'
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
+import GoogleFonts from '../components/Fonts'
+
 config.autoAddCss = false
 
 function App({ Component, pageProps }: AppProps) {
@@ -43,16 +45,6 @@ function App({ Component, pageProps }: AppProps) {
           href="favicons/favicon-16x16.png"
         />
 
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;700&display=swap"
-          rel="stylesheet"
-        />
-
         {process.env.ENABLE_ANALYTICS && (
           <script
             async
@@ -65,6 +57,7 @@ function App({ Component, pageProps }: AppProps) {
         )}
       </Head>
 
+      <GoogleFonts href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" />
       <ChakraProvider theme={chakraTheme}>
         <Component {...pageProps} />
       </ChakraProvider>
