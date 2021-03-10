@@ -12,15 +12,23 @@ import {
 
 function Feature({ image, title, content, reverse = false }) {
   return (
-    <Stack
-      py={4}
-      spacing={{base: 4, md: 8}}
+    <Flex
+      py={[8, 8, 16]}
       direction={['column', 'column', reverse ? 'row-reverse' : 'row']}
       justify="center"
       align="center"
     >
-      {image}
-      <Box width="100%">
+      <Box
+        mb={[0, 0, 16]}
+        my={[16, 8, 0]}
+        mx={[0, 0, 8, 16]}
+      >
+        {image}
+      </Box>
+      <Box
+        width="100%"
+        maxW="512px"
+      >
         <Heading
           as="h2"
           textAlign="center"
@@ -33,12 +41,11 @@ function Feature({ image, title, content, reverse = false }) {
         <Box
           textStyle="normal"
           align="center"
-          // align={reverse ? 'left' : 'right'}
         >
           {content}
         </Box>
       </Box>
-    </Stack>
+    </Flex>
   )
 }
 
@@ -46,17 +53,17 @@ export default function Features() {
   return (
     <Flex
       as="section"
-      py={16}
+      py={8}
       px={[8, 12, 16]}
       position="relative"
       justify="center"
     >
       <Box id="features" position="absolute" top="-80px" />
-      <VStack spacing={16} maxWidth="6xl" width="100%">
+      <Flex direction="column" maxWidth="6xl" width="100%">
         <Feature
           title="The missing off-ramp"
           image={
-            <AspectRatio width={320} ratio={1}>
+            <AspectRatio width={['220px', '250px', '320px']} ratio={1}>
               <video autoPlay loop muted>
                 <source src="images/gifs/ATM.webm" type="video/webm" />
               </video>
@@ -87,7 +94,7 @@ export default function Features() {
           image={
             <Image
               src="images/illus/astro_code.webp"
-              boxSize={[220, 300, 320]}
+              boxSize={['220px', '300px', '320px']}
               objectFit="contain"
             />
           }
@@ -122,7 +129,7 @@ export default function Features() {
           }
           reverse
         />
-      </VStack>
+      </Flex>
     </Flex>
   )
 }
