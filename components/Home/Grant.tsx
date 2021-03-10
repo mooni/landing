@@ -13,7 +13,7 @@ export default function Grant() {
         align="center"
       >
         <Image
-          src="images/planet_grant.png"
+          src="images/illus/grants_planet.png"
           boxSize={[120, 200, 320]}
           objectFit="contain"
         />

@@ -43,14 +43,43 @@ export default function Features() {
     >
       <Box id="features" position="absolute" top="-80px" />
       <VStack spacing={8} maxWidth="6xl" width="100%">
+
+        <Feature
+          title="The missing off-ramp"
+          image={
+            <Image
+              src="images/illus/distrib_ex.png"
+              boxSize={[180, 220, 320]}
+              objectFit="contain"
+            />
+          }
+          content={
+            <>
+              <Text>
+                There is a growing number of platforms which allows to easily{' '}
+                <b>generate revenue online</b> for anyone in the world. Most of
+                these platforms integrate on-ramping services to onboard new
+                users, but <b>do not propose</b> a solution to off-ramp when
+                they want to exit.
+              </Text>
+              <Text mt={2}>
+                Creating an account, passing KYC verifications, depositing
+                coins, exchanging and withdrawing fiat on centralised exchanges
+                is a long and tedious process. Mooni{' '}
+                <b>removes this friction</b> by proposing a <b>quick</b>,{' '}
+                <b>non-custodial</b> and <b>KYC-less</b> checkout, like an ATM.
+              </Text>
+            </>
+          }
+        />
+
         <Feature
           title="For decentralised workers"
           image={
             <Image
-              src="images/astro5.png"
-              boxSize={[120, 200, 320]}
+              src="images/illus/astro_code.png"
+              boxSize={[220, 300, 320]}
               objectFit="contain"
-              transform="rotate(15deg)"
             />
           }
           content={
@@ -79,34 +108,6 @@ export default function Features() {
                   <b>Future of Work</b>
                 </Link>{' '}
                 while keeping your <b>favorite bank account</b> with you.
-              </Text>
-            </>
-          }
-        />
-        <Feature
-          title="The missing off-ramp"
-          image={
-            <Image
-              src="images/distrib2.png"
-              boxSize={[120, 200, 320]}
-              objectFit="contain"
-            />
-          }
-          content={
-            <>
-              <Text>
-                There is a growing number of platforms which allows to easily{' '}
-                <b>generate revenue online</b> for anyone in the world. Most of
-                these platforms integrate on-ramping services to onboard new
-                users, but <b>do not propose</b> a solution to off-ramp when
-                they want to exit.
-              </Text>
-              <Text mt={2}>
-                Creating an account, passing KYC verifications, depositing
-                coins, exchanging and withdrawing fiat on centralised exchanges
-                is a long and tedious process. Mooni{' '}
-                <b>removes this friction</b> by proposing a <b>quick</b>,{' '}
-                <b>non-custodial</b> and <b>KYC-less</b> checkout, like an ATM.
               </Text>
             </>
           }

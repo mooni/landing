@@ -17,7 +17,7 @@ export default function SEO({ data }) {
       <meta name="twitter:description" content="Easy crypto cash out" />
       <meta
         name="twitter:image"
-        content="https://mooni.tech/images/app_screenshot.jpg"
+        content="https://mooni.tech/images/seo/app_screenshot.jpg"
       />
       <meta name="twitter:image:alt" content="Mooni" />
 
@@ -26,7 +26,7 @@ export default function SEO({ data }) {
       <meta property="og:url" content="https://mooni.tech/" />
       <meta
         property="og:image"
-        content="https://mooni.tech/images/app_screenshot.jpg"
+        content="https://mooni.tech/images/seo/app_screenshot.jpg"
       />
       <meta
         property="og:description"

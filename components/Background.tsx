@@ -18,7 +18,7 @@ export default function Background() {
       />
       <Box
         position="absolute"
-        bg="url(images/stars.png) repeat"
+        bg="url(images/illus/stars.png) repeat"
         width="100%"
         height="100%"
         opacity={0.7}

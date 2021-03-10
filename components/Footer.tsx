@@ -6,8 +6,8 @@ import {
   WrapItem,
   Box,
   VStack,
-  Heading,
-} from '../components/ui'
+  Heading, Image
+} from "../components/ui";
 import { AutoLink } from './Links'
 import { Icon } from './Icons'
 
@@ -48,7 +48,7 @@ export default function Footer() {
         <WrapItem>
           <VStack align="left">
             <Flex align="center">
-              <Icon icon="moon_logo_white" size={30} mr={4} />
+              <Image src="/images/logos/logo_blue_bg.svg" boxSize={35} mr={2} />
               <Text textStyle="appName">Mooni</Text>
             </Flex>
             <Text textStyle="appPunchline" mb={2}>

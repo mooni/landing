@@ -12,15 +12,14 @@ export default function Hero() {
     <Box as="section">
       <VStack spacing={8} py={16} px={4}>
         <Box
-          bg={`url(images/moonrender6_large.png) 50% 0% / contain no-repeat`}
-          bgRepeat="no-repeat"
-          width="450px"
-          height="450px"
+          bg={`url(images/logos/logo_blue.svg) 50% 0% / contain no-repeat`}
+          width="350px"
+          height="350px"
           maxWidth="80%"
           maxHeight="80%"
           position="absolute"
           top="120px"
-          opacity={0.1}
+          opacity={0.3}
           zIndex={-1}
           // sx={{ "mix-blend-mode": "overlay"}}
         />
@@ -61,10 +60,13 @@ export default function Hero() {
       </VStack>
       <Center>
         <Box
-          bg={`url(images/cityrender4.png) center no-repeat`}
+          bg={`url(images/illus/cityrender6_mooni.png)`}
+          bgPosition="center"
           bgRepeat="no-repeat"
-          height="450px"
+          bgSize="cover"
+          height="350px"
           width="100%"
+          maxWidth="1146px"
         />
       </Center>
     </Box>
