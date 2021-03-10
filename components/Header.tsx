@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Button, Flex, Link, Box, HStack, Text } from './ui'
+import { Button, Flex, Link, Box, Image, HStack, Text } from './ui'
 import { AutoButtonLink } from './Links'
 import { useScroll } from '../lib/utils'
 import { Icon } from './Icons'
