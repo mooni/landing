@@ -86,7 +86,7 @@ export default function Features() {
         />
 
         <Feature
-          title="For decentralised workers"
+          title="Use your crypto earnings"
           image={
             <Image
               src="images/illus/astro_code.webp"
