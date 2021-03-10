@@ -12,6 +12,7 @@ const links = {
   reddit: 'https://reddit.com/r/mooni',
   github: 'https://github.com/mooni/mooni',
   grant: 'https://gitcoin.co/grants/225/mooni-the-easiest-crypto-off-ramp',
+  supportedCurrencies: 'https://blog.mooni.tech/supported-currencies/',
 }
 
 export const AutoLink = ({ to, children, ...props }) => (

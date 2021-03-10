@@ -1,8 +1,14 @@
 import { useState } from 'react'
 
-import { VStack, Image, Flex, Text, Box } from '../ui'
+import { VStack, Flex, Text, Box } from '../ui'
 import { AutoLink } from '../Links'
 import { Icon } from '../Icons'
+
+const FAQLink = ({to, ...props}) => (
+  <AutoLink to={to} {...props} textDecoration="underline">
+    {props.children}
+  </AutoLink>
+);
 
 const Question = ({ children, open, ...props }) => (
   <Box
@@ -23,10 +29,10 @@ const Question = ({ children, open, ...props }) => (
 )
 
 const BorderGradientBox = ({
-  children,
-  borderRadius = undefined,
-  ...props
-}) => (
+                             children,
+                             borderRadius = undefined,
+                             ...props
+                           }) => (
   <Box
     padding="1px"
     layerStyle="gradient"
@@ -77,13 +83,23 @@ const list = [
     key: 'currencies',
     question: 'Which cryptocurrencies are supported ?',
     response:
-      'Currently, Mooni supports all Ether and ERC-20 tokens. L2s and other blockchains such as Matic, xDai, and Bitcoin will be supported soon.',
+      <>
+        Currently, Mooni supports Ether (ETH) and most of ERC-20 tokens. L2s and other blockchains such as Matic, xDai, and Bitcoin will be supported soon. Check our <FAQLink to="supportedCurrencies">dedicated blog post</FAQLink> about this.
+      </>,
   },
   {
     key: 'cost',
     question: 'How much does it cost ?',
     response:
       'Our base fee is 2.8% per transaction. It may depend on the exchanged amount, the exact amount is displayed on the app when placing an order. You also have to pay for blockchain transaction fees which can vary depending on market conditions.',
+  },
+  {
+    key: 'integration',
+    question: 'Can I include Mooni into my app ?',
+    response:
+      <>
+        Surely! Integrating Mooni into your app is super quick and allow your users to cashout easily the revenue they earn on your platform. Check the <FAQLink to="widgetSDK">developer documentation</FAQLink> for details.
+      </>,
   },
   {
     key: 'regulation',
@@ -129,7 +145,7 @@ export default function FAQ() {
       </VStack>
 
       <Text textStyle="small" textAlign="center" mt={4}>
-        You can always reach us on <AutoLink to="discord">Discord</AutoLink> if
+        You can always reach us on <FAQLink to="discord">Discord</FAQLink> if
         you have any other questions 😇
       </Text>
     </Flex>

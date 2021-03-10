@@ -57,6 +57,7 @@ export default function Features() {
       px={[8, 12, 16]}
       position="relative"
       justify="center"
+      direction="column"
     >
       <Box id="features" position="absolute" top="-80px" />
       <Flex direction="column" maxWidth="6xl" width="100%">
@@ -72,18 +73,12 @@ export default function Features() {
           content={
             <>
               <Text>
-                There is a growing number of platforms which allows to easily{' '}
-                <b>generate revenue online</b> for anyone in the world. Most of
-                these platforms integrate on-ramping services to onboard new
-                users, but <b>do not propose</b> a solution to off-ramp when
-                they want to exit.
-              </Text>
-              <Text mt={2}>
-                Creating an account, passing KYC verifications, depositing
-                coins, exchanging and withdrawing fiat on centralised exchanges
-                is a long and tedious process. Mooni{' '}
-                <b>removes this friction</b> by proposing a <b>quick</b>,{' '}
-                <b>non-custodial</b> and <b>KYC-less</b> checkout, like an ATM.
+                There are plenty of on-ramps out there allowing you to enter the
+                crypto space, but <b>very little that allow you to cash out</b> and exit
+                the market, aside from ATMs or crypto debit cards which aren’t fitted
+                for all life situations, and centralized exchanges forcing you into a
+                KYC / AML verifications process that takes ages, puts your personal
+                information in jeopardy, and your crypto assets under custody.
               </Text>
             </>
           }
@@ -109,27 +104,27 @@ export default function Features() {
                 like groceries, rent or health insurance still need to be paid
                 in fiat.
               </Text>
-              <Text mt={2}>
-                Mooni <b>supports most of the tokens</b> in the{' '}
-                <b>Ethereum DeFi</b> ecosystem as a payment, and can easily be
-                integrated into any dApp.
-              </Text>
-              <Text mt={2}>
-                Engage now in the{' '}
-                <Link
-                  to="https://gitcoin.co/vision"
-                  isExternal
-                  color="purple.600"
-                >
-                  <b>Future of Work</b>
-                </Link>{' '}
-                while keeping your <b>favorite bank account</b> with you.
-              </Text>
             </>
           }
           reverse
         />
       </Flex>
+
+      <Text
+        mt={2}
+        textAlign="center"
+        textStyle="caption"
+      >
+        Engage now in the{' '}
+        <Link
+          to="https://gitcoin.co/vision"
+          isExternal
+          color="purple.600"
+        >
+          Future of Work
+        </Link>{' '}
+        while keeping your favorite bank account with you.
+      </Text>
     </Flex>
   )
 }
