@@ -1,15 +1,13 @@
+const noop = () => undefined;
+
 function getPlausible() {
-  // @ts-ignore
-  return (
-    window.plausible ||
-    function () {
-      // @ts-ignore
-      window.plausible = // @ts-ignore
-      (window.plausible.q = window.plausible?.q || []).push(arguments)
-    }
-  )
+  return typeof window !== 'undefined' ?
+    window['plausible']
+    :
+    noop;
 }
 
 export function sendEvent(name: string, props?: any) {
+  console.log(getPlausible());
   if (process.env.ENABLE_ANALYTICS) getPlausible()(name, props)
 }
