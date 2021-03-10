@@ -1,4 +1,4 @@
-import { Box, Flex, VStack, Link, Stack, Heading, Image, Text } from '../ui'
+import { Box, Flex, AspectRatio, VStack, Link, Stack, Heading, Image, Text } from '../ui'
 
 function Feature({ image, title, content, reverse = false }) {
   return (
@@ -46,11 +46,11 @@ export default function Features() {
         <Feature
           title="The missing off-ramp"
           image={
-            <Image
-              src="images/gifs/ATM.gif"
-              boxSize={[180, 220, 320]}
-              objectFit="contain"
-            />
+            <AspectRatio width={320} ratio={1}>
+              <video autoPlay loop muted>
+                <source src="images/gifs/ATM.webm" type="video/webm" />
+              </video>
+            </AspectRatio>
           }
           content={
             <>
