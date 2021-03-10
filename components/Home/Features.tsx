@@ -43,7 +43,6 @@ export default function Features() {
     >
       <Box id="features" position="absolute" top="-80px" />
       <VStack spacing={8} maxWidth="6xl" width="100%">
-
         <Feature
           title="The missing off-ramp"
           image={

@@ -6,8 +6,9 @@ import {
   WrapItem,
   Box,
   VStack,
-  Heading, Image
-} from "../components/ui";
+  Heading,
+  Image,
+} from '../components/ui'
 import { AutoLink } from './Links'
 import { Icon } from './Icons'
 
@@ -18,9 +19,7 @@ import {
   faTwitter,
   faReddit,
 } from '@fortawesome/free-brands-svg-icons'
-import {
-  faEnvelope,
-} from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const SectionHead = ({ children }) => (
   <Heading as="h3" textStyle="h3">
@@ -40,7 +39,7 @@ export default function Footer() {
       mt={4}
       as="footer"
       layerStyle="gradientTransparent"
-      sx={{ 'backdropFilter': 'blur(4px)' }}
+      sx={{ backdropFilter: 'blur(4px)' }}
     >
       <Wrap
         px={['1rem', '1rem', '2rem', '4rem']}

@@ -11,7 +11,7 @@ export const Button = ({ variant = undefined, children, ...props }) => (
       lineHeight={variant !== 'link' ? '24px' : undefined}
       marginBottom={variant !== 'link' ? '2px' : undefined}
       textTransform={variant !== 'link' ? 'lowercase' : undefined}
-      sx={variant !== 'link' ? { 'fontVariant': 'small-caps' } : undefined}
+      sx={variant !== 'link' ? { fontVariant: 'small-caps' } : undefined}
     >
       {children}
     </Text>

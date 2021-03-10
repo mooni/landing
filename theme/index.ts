@@ -113,7 +113,7 @@ const textStyles = {
     fontFamily: "'Montserrat', sans-serif",
     fontWeight: 700,
     textTransform: 'lowercase',
-    fontSize: ["1rem", "1.2rem", "1.2rem", '1.2rem'],
+    fontSize: ['1rem', '1.2rem', '1.2rem', '1.2rem'],
     fontVariant: 'small-caps',
   },
   appName: {
@@ -122,7 +122,7 @@ const textStyles = {
     textTransform: 'uppercase',
     letterSpacing: '0.14rem',
     lineHeight: 1,
-    fontSize: ["1.8rem", "2rem", "2.5rem", '2.5rem'],
+    fontSize: ['1.8rem', '2rem', '2.5rem', '2.5rem'],
   },
   appPunchline: {
     fontFamily: '"Montserrat", sans-serif',

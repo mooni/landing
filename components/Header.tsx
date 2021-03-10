@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Button, Flex, Link, Image, Box, HStack, Text } from "./ui";
+import { Button, Flex, Link, Box, HStack, Text } from './ui'
 import { AutoButtonLink } from './Links'
 import { useScroll } from '../lib/utils'
 import { Icon } from './Icons'
@@ -18,20 +18,24 @@ export default function Header() {
       zIndex={10}
       transition="background-color 0.25s ease 0s;"
       bg={scrolled && 'sky.300'}
-      sx={scrolled ? { 'backdropFilter': 'blur(10px)' } : undefined}
+      sx={scrolled ? { backdropFilter: 'blur(10px)' } : undefined}
       borderBottom={scrolled && '1px solid'}
       borderColor="border.300"
     >
       <Flex
         as="nav"
-        px={{base: '1.5rem', lg: '2rem'}}
-        py={{base: '1rem', lg: '1.5rem'}}
+        px={{ base: '1.5rem', lg: '2rem' }}
+        py={{ base: '1rem', lg: '1.5rem' }}
         justify="space-between"
         align="center"
       >
         <Link onClick={() => window.scroll(0, 0)}>
           <Flex align="center">
-            <Image src="/images/logos/logo_blue_bg.svg" boxSize={["2rem", "2rem", '3.5rem']} mr={4} />
+            <Image
+              src="/images/logos/logo_blue_bg.svg"
+              boxSize={['2rem', '2rem', '3.5rem']}
+              mr={4}
+            />
             <Text textStyle="appName">Mooni</Text>
           </Flex>
         </Link>

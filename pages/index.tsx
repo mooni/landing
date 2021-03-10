@@ -7,7 +7,8 @@ import Grant from '../components/Home/Grant'
 
 const seoData = {
   title: 'Mooni - Easiest crypto cash out',
-  description: 'Effortlessly convert cryptocurrencies from your blockchain wallet, into fiat to your bank account, within minutes.',
+  description:
+    'Effortlessly convert cryptocurrencies from your blockchain wallet, into fiat to your bank account, within minutes.',
   keywords:
     'mooni,offramp,crypto off-ramp,fiat,cash out,defi,exchange,ethereum,crypto,cryptocurrency,cryptocurrencies,blockchain,DAI,ETH',
 }
