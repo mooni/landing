@@ -56,6 +56,7 @@ export default function Features() {
       py={8}
       px={[8, 12, 16]}
       position="relative"
+      align="center"
       justify="center"
       direction="column"
     >
