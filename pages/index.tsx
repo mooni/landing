@@ -6,7 +6,7 @@ import FAQ from '../components/Home/FAQ'
 import Grant from '../components/Home/Grant'
 
 const seoData = {
-  title: 'Mooni - Easiest crypto cash out',
+  title: 'Mooni | Easiest crypto cash out',
   description:
     'Effortlessly convert cryptocurrencies from your blockchain wallet, into fiat to your bank account, within minutes.',
   keywords:

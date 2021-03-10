@@ -6,7 +6,7 @@ export default function Grant() {
     <Box as="section" py={8} id="grant">
       <Stack
         px={8}
-        py={4}
+        py={8}
         spacing={8}
         direction={['column', 'column', 'row']}
         justify="center"

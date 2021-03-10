@@ -14,7 +14,7 @@ function Feature({ image, title, content, reverse = false }) {
   return (
     <Stack
       py={4}
-      spacing={8}
+      spacing={{base: 4, md: 8}}
       direction={['column', 'column', reverse ? 'row-reverse' : 'row']}
       justify="center"
       align="center"
@@ -46,13 +46,13 @@ export default function Features() {
   return (
     <Flex
       as="section"
-      py={8}
+      py={16}
       px={[8, 12, 16]}
       position="relative"
       justify="center"
     >
       <Box id="features" position="absolute" top="-80px" />
-      <VStack spacing={8} maxWidth="6xl" width="100%">
+      <VStack spacing={16} maxWidth="6xl" width="100%">
         <Feature
           title="The missing off-ramp"
           image={

@@ -9,7 +9,7 @@ export default function Hero() {
   // const leftAstro = b * 100 * 0.4 + 10;
 
   return (
-    <Box as="section">
+    <Box as="section" mb={12}>
       <VStack spacing={8} py={16} px={4}>
         <Box
           bg={`url(images/illus/moonrender5.webp) 50% 0% / contain no-repeat`}
@@ -58,7 +58,7 @@ export default function Hero() {
           </AutoButtonLink>
         </Stack>
       </VStack>
-      <Center>
+      <Center mt={8}>
         <Box
           bg={`url(images/illus/cityrender6_mooni.webp)`}
           bgPosition="center"

@@ -28,14 +28,19 @@ export default function Header() {
         justify="space-between"
         align="center"
       >
-        <Link onClick={() => window.scroll(0, 0)}>
+        <Link
+          onClick={() => window.scroll(0, 0)}
+          _hover={{ textDecoration: 'none' }}
+        >
           <Flex align="center">
             <Image
               src="/images/logos/logo_blue_bg.svg"
               boxSize={['2rem', '2rem', '3.5rem']}
               mr={4}
             />
-            <Text textStyle="appName">Mooni</Text>
+            <Text
+              textStyle="appName"
+            >Mooni</Text>
           </Flex>
         </Link>
 
